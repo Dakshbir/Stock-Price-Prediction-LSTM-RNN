@@ -1,0 +1,1057 @@
+2025-07-03 13:55:35.702 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-07-03 13:55:35.702 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-07-03 13:55:35.702 [warning] Dir "c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\.pixi\envs" is not watchable (directory does not exist)
+2025-07-03 13:55:35.702 [info] Python interpreter path: ~\AppData\Local\Programs\Python\Python313\python.exe
+2025-07-03 13:55:35.702 [info] > pyenv which python
+2025-07-03 13:55:35.703 [info] cwd: .
+2025-07-03 13:55:56.646 [info] Starting Pylance language server.
+2025-07-03 14:02:49.949 [info] > conda info --json
+2025-07-03 14:03:10.142 [info] Starting Environment refresh
+2025-07-03 14:03:10.142 [info] Searching for windows registry interpreters
+2025-07-03 14:03:10.143 [info] Searching windows known paths locator
+2025-07-03 14:03:10.161 [info] Searching for pyenv environments
+2025-07-03 14:03:10.161 [info] Searching for conda environments
+2025-07-03 14:03:10.164 [info] Searching for global virtual environments
+2025-07-03 14:03:10.164 [info] Searching for custom virtual environments
+2025-07-03 14:03:10.164 [info] Searching for windows store envs
+2025-07-03 14:03:10.187 [info] > hatch env show --json
+2025-07-03 14:03:10.187 [info] cwd: .
+2025-07-03 14:03:10.254 [info] pyenv is not installed
+2025-07-03 14:03:10.254 [info] Finished searching for pyenv environments: 107 milliseconds
+2025-07-03 14:03:10.255 [info] Finished searching for custom virtual envs: 104 milliseconds
+2025-07-03 14:03:10.255 [info] Finished searching for windows store envs: 96 milliseconds
+2025-07-03 14:03:10.376 [info] Finished searching for global virtual envs: 228 milliseconds
+2025-07-03 14:03:10.489 [info] > ~\AppData\Local\Programs\Python\Python311\python.exe -I ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\get_output_via_markers.py ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\interpreterInfo.py
+2025-07-03 14:03:10.513 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe -I ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\get_output_via_markers.py ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\interpreterInfo.py
+2025-07-03 14:03:10.514 [info] Finished searching for windows registry interpreters: 377 milliseconds
+2025-07-03 14:03:10.519 [info] Finished searching windows known paths locator: 381 milliseconds
+2025-07-03 14:03:10.520 [info] Environments refresh paths discovered (event): 385 milliseconds
+2025-07-03 14:03:10.520 [info] Environments refresh paths discovered: 386 milliseconds
+2025-07-03 14:03:10.837 [info] Environments refresh finished (event): 703 milliseconds
+2025-07-03 14:03:10.847 [info] Environment refresh took 719 milliseconds
+2025-07-03 14:04:10.597 [info] > .\venv\Scripts\python.exe -I ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\get_output_via_markers.py ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\interpreterInfo.py
+2025-07-03 14:04:10.597 [info] Environments refresh paths discovered: 42 milliseconds
+2025-07-03 14:04:10.798 [info] Environments refresh finished (event): 243 milliseconds
+2025-07-03 14:23:47.604 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 14:23:47.604 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:50:38.962 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:50:38.962 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:50:47.856 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:50:47.857 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:50:51.968 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:50:51.968 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:50:55.411 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:50:55.411 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:51:00.659 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:51:00.659 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:51:02.750 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:51:02.750 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:51:06.330 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:51:06.331 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:51:10.068 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:51:10.068 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:51:13.229 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:51:13.229 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:51:18.012 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:51:18.012 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:51:20.239 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:51:20.240 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:51:22.739 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:51:22.739 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:51:25.054 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 15:51:25.054 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 15:52:15.366 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\engine.py
+2025-07-03 15:52:45.175 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\ml_pipeline\utils.py
+2025-07-03 15:52:47.023 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\ml_pipeline\utils.py
+2025-07-03 15:52:50.114 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\ml_pipeline\utils.py
+2025-07-03 16:08:13.891 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\ml_pipeline\train.py
+2025-07-03 16:12:38.014 [info] Selected workspace c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN for creating virtual environment.
+2025-07-03 16:13:45.654 [info] Selected workspace c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN for creating virtual environment.
+2025-07-03 16:13:47.128 [info] Selected workspace c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN for creating virtual environment.
+2025-07-03 16:13:47.566 [info] Selected workspace c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN for creating virtual environment.
+2025-07-03 16:13:47.926 [info] Selected workspace c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN for creating virtual environment.
+2025-07-03 16:13:48.145 [info] Selected workspace c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN for creating virtual environment.
+2025-07-03 16:14:39.816 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\ml_pipeline\init.py
+2025-07-03 16:14:46.256 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\ml_pipeline\init.py
+2025-07-03 16:14:47.924 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\ml_pipeline\init.py
+2025-07-03 16:18:00.595 [info] Running installed packages checker:  {
+  id: 'C:\\USERS\\ADMIN\\APPDATA\\LOCAL\\PROGRAMS\\PYTHON\\PYTHON313\\PYTHON.EXE',
+  sysPrefix: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: 'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe',
+  architecture: 3,
+  sysVersion: '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]',
+  version: {
+    raw: '3.13.3',
+    major: 3,
+    minor: 13,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  companyDisplayName: 'PythonCore',
+  displayName: 'Python 3.13.3 64-bit',
+  detailedDisplayName: 'Python 3.13.3 64-bit',
+  type: undefined
+} c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 16:18:00.595 [info] > ~\AppData\Local\Programs\Python\Python313\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\installed_check.py .\requirements.txt
+2025-07-03 16:18:34.757 [info] Selected workspace c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN for creating virtual environment.
+2025-07-03 16:22:46.834 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\.vscode\settings.json
+2025-07-03 16:22:49.228 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\.vscode\settings.json
+2025-07-03 16:25:25.869 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\test_setup.py
+2025-07-03 16:25:44.422 [info] Selected workspace c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN for creating virtual environment.
+2025-07-03 16:25:45.569 [info] Selected workspace c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN for creating virtual environment.
+2025-07-03 16:27:40.355 [info] Selected interpreter C:\Users\Admin\AppData\Local\Programs\Python\Python311\python.exe for creating virtual environment.
+2025-07-03 16:27:46.497 [info] Running Env creation script:  [
+  'C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe',
+  'c:\\Users\\Admin\\.vscode\\extensions\\ms-python.python-2025.8.0-win32-x64\\python_files\\create_venv.py',
+  '--git-ignore',
+  '--requirements',
+  'c:\\Users\\Admin\\OneDrive\\Desktop\\Developer\\Stock-Price-Prediction-YFinance-LSTM-RNN\\requirements.txt'
+]
+2025-07-03 16:27:46.497 [info] > ~\AppData\Local\Programs\Python\Python311\python.exe ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\create_venv.py --git-ignore --requirements .\requirements.txt
+2025-07-03 16:27:46.497 [info] cwd: .
+2025-07-03 16:27:46.704 [info] Running: C:\Users\Admin\AppData\Local\Programs\Python\Python311\python.exe -m venv .venv
+2025-07-03 16:27:47.923 [info] Environments refresh paths discovered: 24 milliseconds
+2025-07-03 16:27:47.941 [info] > .\.venv\Scripts\python.exe -I ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\get_output_via_markers.py ~\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\interpreterInfo.py
+2025-07-03 16:27:48.113 [info] Environments refresh finished (event): 215 milliseconds
+2025-07-03 16:28:07.136 [info] CREATED_VENV:c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\.venv\Scripts\python.exe
+2025-07-03 16:28:07.137 [info] Creating: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\.venv\.gitignore
+CREATE_VENV.UPGRADING_PIP
+Running: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\.venv\Scripts\python.exe -m pip install --upgrade pip
+2025-07-03 16:28:08.157 [info] Requirement already satisfied: pip in c:\users\admin\onedrive\desktop\developer\stock-price-prediction-yfinance-lstm-rnn\.venv\lib\site-packages (22.3)
+2025-07-03 16:28:08.350 [info] Collecting pip
+2025-07-03 16:28:08.410 [info]   Downloading pip-25.1.1-py3-none-any.whl (1.8 MB)
+2025-07-03 16:28:08.681 [info]      ----------------------------------------
+2025-07-03 16:28:08.681 [info] 1.8/1.8 MB 6.8 MB/s eta 0:00:00
+2025-07-03 16:28:08.783 [info] Installing collected packages: pip
+2025-07-03 16:28:08.783 [info]   Attempting uninstall: pip
+2025-07-03 16:28:08.788 [info]     Found existing installation: pip 22.3
+2025-07-03 16:28:09.935 [info]     Uninstalling pip-22.3:
+2025-07-03 16:28:09.986 [info]       Successfully uninstalled pip-22.3
+2025-07-03 16:28:20.167 [info] Successfully installed pip-25.1.1
+2025-07-03 16:28:20.518 [info] CREATE_VENV.UPGRADED_PIP
+VENV_INSTALLING_REQUIREMENTS: ['c:\\Users\\Admin\\OneDrive\\Desktop\\Developer\\Stock-Price-Prediction-YFinance-LSTM-RNN\\requirements.txt']
+VENV_INSTALLING_REQUIREMENTS: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+Running: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\.venv\Scripts\python.exe -m pip install -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt
+2025-07-03 16:28:22.449 [info] Collecting tensorflow==2.15.0 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:22.506 [info]   Downloading tensorflow-2.15.0-cp311-cp311-win_amd64.whl.metadata (3.6 kB)
+2025-07-03 16:28:22.913 [info] Collecting numpy==1.24.3 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 2))
+2025-07-03 16:28:22.936 [info]   Downloading numpy-1.24.3-cp311-cp311-win_amd64.whl.metadata (5.6 kB)
+2025-07-03 16:28:23.161 [info] Collecting pandas==2.0.3 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 3))
+2025-07-03 16:28:23.179 [info]   Downloading pandas-2.0.3-cp311-cp311-win_amd64.whl.metadata (18 kB)
+2025-07-03 16:28:23.409 [info] Collecting scikit-learn==1.3.0 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 4))
+2025-07-03 16:28:23.438 [info]   Downloading scikit_learn-1.3.0-cp311-cp311-win_amd64.whl.metadata (11 kB)
+2025-07-03 16:28:23.643 [info] Collecting statsmodels==0.14.0 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 5))
+2025-07-03 16:28:23.653 [info]   Downloading statsmodels-0.14.0-cp311-cp311-win_amd64.whl.metadata (9.3 kB)
+2025-07-03 16:28:23.944 [info] Collecting matplotlib==3.7.1 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 6))
+2025-07-03 16:28:23.966 [info]   Downloading matplotlib-3.7.1-cp311-cp311-win_amd64.whl.metadata (5.8 kB)
+2025-07-03 16:28:24.032 [info] Collecting seaborn==0.12.2 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 7))
+2025-07-03 16:28:24.044 [info]   Downloading seaborn-0.12.2-py3-none-any.whl.metadata (5.4 kB)
+2025-07-03 16:28:24.164 [info] Collecting yfinance==0.2.20 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:24.183 [info]   Downloading yfinance-0.2.20-py2.py3-none-any.whl.metadata (13 kB)
+2025-07-03 16:28:24.344 [info] Collecting pandas_datareader==0.10.0 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 9))
+2025-07-03 16:28:24.361 [info]   Downloading pandas_datareader-0.10.0-py3-none-any.whl.metadata (2.9 kB)
+2025-07-03 16:28:24.426 [info] Collecting pandas_ta==0.3.14b (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 10))
+2025-07-03 16:28:24.439 [info]   Downloading pandas_ta-0.3.14b.tar.gz (115 kB)
+2025-07-03 16:28:24.691 [info]   Installing build dependencies: started
+2025-07-03 16:28:26.822 [info]   Installing build dependencies: finished with status 'done'
+2025-07-03 16:28:26.824 [info]   Getting requirements to build wheel: started
+2025-07-03 16:28:29.007 [info]   Getting requirements to build wheel: finished with status 'done'
+2025-07-03 16:28:29.023 [info]   Preparing metadata (pyproject.toml): started
+2025-07-03 16:28:29.764 [info]   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-07-03 16:28:29.804 [info] Collecting projectpro (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 11))
+2025-07-03 16:28:30.040 [info]   Downloading projectpro-0.0.30-py3-none-any.whl.metadata (448 bytes)
+2025-07-03 16:28:30.137 [info] Collecting plotly==5.15.0 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 12))
+2025-07-03 16:28:30.146 [info]   Downloading plotly-5.15.0-py2.py3-none-any.whl.metadata (7.0 kB)
+2025-07-03 16:28:30.262 [info] Collecting dash==2.14.2 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:30.275 [info]   Downloading dash-2.14.2-py3-none-any.whl.metadata (11 kB)
+2025-07-03 16:28:30.398 [info] Collecting jupyter==1.0.0 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:30.421 [info]   Downloading jupyter-1.0.0-py2.py3-none-any.whl.metadata (995 bytes)
+2025-07-03 16:28:30.571 [info] Collecting notebook==6.5.4 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:30.597 [info]   Downloading notebook-6.5.4-py3-none-any.whl.metadata (2.5 kB)
+2025-07-03 16:28:30.894 [info] Collecting numba==0.57.1 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 16))
+2025-07-03 16:28:31.139 [info]   Downloading numba-0.57.1-cp311-cp311-win_amd64.whl.metadata (2.8 kB)
+2025-07-03 16:28:31.245 [info] Collecting joblib==1.3.1 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 17))
+2025-07-03 16:28:31.256 [info]   Downloading joblib-1.3.1-py3-none-any.whl.metadata (5.4 kB)
+2025-07-03 16:28:31.341 [info] Collecting python-dotenv==1.0.0 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 18))
+2025-07-03 16:28:31.401 [info]   Using cached python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+2025-07-03 16:28:31.530 [info] Collecting configparser==5.3.0 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 19))
+2025-07-03 16:28:31.541 [info]   Downloading configparser-5.3.0-py3-none-any.whl.metadata (11 kB)
+2025-07-03 16:28:31.659 [info] Collecting loguru==0.7.0 (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 20))
+2025-07-03 16:28:31.671 [info]   Downloading loguru-0.7.0-py3-none-any.whl.metadata (22 kB)
+2025-07-03 16:28:31.823 [info] Collecting ipykernel (from -r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:31.833 [info]   Downloading ipykernel-6.29.5-py3-none-any.whl.metadata (6.3 kB)
+2025-07-03 16:28:31.912 [info] Collecting tensorflow-intel==2.15.0 (from tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:31.930 [info]   Downloading tensorflow_intel-2.15.0-cp311-cp311-win_amd64.whl.metadata (5.1 kB)
+2025-07-03 16:28:32.023 [info] Collecting python-dateutil>=2.8.2 (from pandas==2.0.3->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 3))
+2025-07-03 16:28:32.059 [info]   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-07-03 16:28:32.189 [info] Collecting pytz>=2020.1 (from pandas==2.0.3->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 3))
+2025-07-03 16:28:32.224 [info]   Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+2025-07-03 16:28:32.319 [info] Collecting tzdata>=2022.1 (from pandas==2.0.3->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 3))
+2025-07-03 16:28:32.351 [info]   Using cached tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+2025-07-03 16:28:32.683 [info] Collecting scipy>=1.5.0 (from scikit-learn==1.3.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 4))
+2025-07-03 16:28:32.706 [info]   Downloading scipy-1.16.0-cp311-cp311-win_amd64.whl.metadata (60 kB)
+2025-07-03 16:28:32.822 [info] Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.3.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 4))
+2025-07-03 16:28:32.857 [info]   Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2025-07-03 16:28:32.950 [info] Collecting patsy>=0.5.2 (from statsmodels==0.14.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 5))
+2025-07-03 16:28:32.964 [info]   Downloading patsy-1.0.1-py2.py3-none-any.whl.metadata (3.3 kB)
+2025-07-03 16:28:33.039 [info] Collecting packaging>=21.3 (from statsmodels==0.14.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 5))
+2025-07-03 16:28:33.056 [info]   Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+2025-07-03 16:28:33.200 [info] Collecting contourpy>=1.0.1 (from matplotlib==3.7.1->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 6))
+2025-07-03 16:28:33.223 [info]   Downloading contourpy-1.3.2-cp311-cp311-win_amd64.whl.metadata (5.5 kB)
+2025-07-03 16:28:33.300 [info] Collecting cycler>=0.10 (from matplotlib==3.7.1->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 6))
+2025-07-03 16:28:33.315 [info]   Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2025-07-03 16:28:33.588 [info] Collecting fonttools>=4.22.0 (from matplotlib==3.7.1->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 6))
+2025-07-03 16:28:33.614 [info]   Downloading fonttools-4.58.4-cp311-cp311-win_amd64.whl.metadata (108 kB)
+2025-07-03 16:28:33.877 [info] Collecting kiwisolver>=1.0.1 (from matplotlib==3.7.1->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 6))
+2025-07-03 16:28:33.888 [info]   Downloading kiwisolver-1.4.8-cp311-cp311-win_amd64.whl.metadata (6.3 kB)
+2025-07-03 16:28:34.315 [info] Collecting pillow>=6.2.0 (from matplotlib==3.7.1->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 6))
+2025-07-03 16:28:34.334 [info]   Downloading pillow-11.3.0-cp311-cp311-win_amd64.whl.metadata (9.2 kB)
+2025-07-03 16:28:34.460 [info] Collecting pyparsing>=2.3.1 (from matplotlib==3.7.1->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 6))
+2025-07-03 16:28:34.494 [info]   Using cached pyparsing-3.2.3-py3-none-any.whl.metadata (5.0 kB)
+2025-07-03 16:28:34.630 [info] Collecting requests>=2.26 (from yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:34.670 [info]   Using cached requests-2.32.4-py3-none-any.whl.metadata (4.9 kB)
+2025-07-03 16:28:34.722 [info] Collecting multitasking>=0.0.7 (from yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:34.738 [info]   Using cached multitasking-0.0.11-py3-none-any.whl.metadata (5.5 kB)
+2025-07-03 16:28:35.069 [info] Collecting lxml>=4.9.1 (from yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:35.080 [info]   Downloading lxml-6.0.0-cp311-cp311-win_amd64.whl.metadata (6.8 kB)
+2025-07-03 16:28:35.115 [info] Collecting appdirs>=1.4.4 (from yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:35.126 [info]   Downloading appdirs-1.4.4-py2.py3-none-any.whl.metadata (9.0 kB)
+2025-07-03 16:28:35.273 [info] Collecting frozendict>=2.3.4 (from yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:35.283 [info]   Downloading frozendict-2.4.6-py311-none-any.whl.metadata (23 kB)
+2025-07-03 16:28:35.663 [info] Collecting cryptography>=3.3.2 (from yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:35.683 [info]   Downloading cryptography-45.0.5-cp311-abi3-win_amd64.whl.metadata (5.7 kB)
+2025-07-03 16:28:35.780 [info] Collecting beautifulsoup4>=4.11.1 (from yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:35.822 [info]   Using cached beautifulsoup4-4.13.4-py3-none-any.whl.metadata (3.8 kB)
+2025-07-03 16:28:35.855 [info] Collecting html5lib>=1.1 (from yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:35.865 [info]   Downloading html5lib-1.1-py2.py3-none-any.whl.metadata (16 kB)
+2025-07-03 16:28:36.045 [info] Collecting tenacity>=6.2.0 (from plotly==5.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 12))
+2025-07-03 16:28:36.066 [info]   Downloading tenacity-9.1.2-py3-none-any.whl.metadata (1.2 kB)
+2025-07-03 16:28:36.133 [info] Collecting Flask<3.1,>=1.0.4 (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.145 [info]   Downloading flask-3.0.3-py3-none-any.whl.metadata (3.2 kB)
+2025-07-03 16:28:36.234 [info] Collecting Werkzeug<3.1 (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.244 [info]   Downloading werkzeug-3.0.6-py3-none-any.whl.metadata (3.7 kB)
+2025-07-03 16:28:36.326 [info] Collecting dash-html-components==2.0.0 (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.336 [info]   Downloading dash_html_components-2.0.0-py3-none-any.whl.metadata (3.8 kB)
+2025-07-03 16:28:36.391 [info] Collecting dash-core-components==2.0.0 (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.402 [info]   Downloading dash_core_components-2.0.0-py3-none-any.whl.metadata (2.9 kB)
+2025-07-03 16:28:36.448 [info] Collecting dash-table==5.0.0 (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.459 [info]   Downloading dash_table-5.0.0-py3-none-any.whl.metadata (2.4 kB)
+2025-07-03 16:28:36.554 [info] Collecting typing-extensions>=4.1.1 (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.592 [info]   Using cached typing_extensions-4.14.0-py3-none-any.whl.metadata (3.0 kB)
+2025-07-03 16:28:36.621 [info] Collecting retrying (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.631 [info]   Downloading retrying-1.4.0-py3-none-any.whl.metadata (7.5 kB)
+2025-07-03 16:28:36.689 [info] Collecting ansi2html (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.699 [info]   Downloading ansi2html-1.9.2-py3-none-any.whl.metadata (3.7 kB)
+2025-07-03 16:28:36.746 [info] Collecting nest-asyncio (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.756 [info]   Downloading nest_asyncio-1.6.0-py3-none-any.whl.metadata (2.8 kB)
+2025-07-03 16:28:36.787 [info] Requirement already satisfied: setuptools in c:\users\admin\onedrive\desktop\developer\stock-price-prediction-yfinance-lstm-rnn\.venv\lib\site-packages (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13)) (65.5.0)
+2025-07-03 16:28:36.847 [info] Collecting importlib-metadata (from dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:36.856 [info]   Downloading importlib_metadata-8.7.0-py3-none-any.whl.metadata (4.8 kB)
+2025-07-03 16:28:36.930 [info] Collecting qtconsole (from jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:36.940 [info]   Downloading qtconsole-5.6.1-py3-none-any.whl.metadata (5.0 kB)
+2025-07-03 16:28:37.006 [info] Collecting jupyter-console (from jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:37.015 [info]   Downloading jupyter_console-6.6.3-py3-none-any.whl.metadata (5.8 kB)
+2025-07-03 16:28:37.090 [info] Collecting nbconvert (from jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:37.099 [info]   Downloading nbconvert-7.16.6-py3-none-any.whl.metadata (8.5 kB)
+2025-07-03 16:28:37.201 [info] Collecting ipywidgets (from jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:37.211 [info]   Downloading ipywidgets-8.1.7-py3-none-any.whl.metadata (2.4 kB)
+2025-07-03 16:28:37.290 [info] Collecting jinja2 (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:37.326 [info]   Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2025-07-03 16:28:37.397 [info] Collecting tornado>=6.1 (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:37.408 [info]   Downloading tornado-6.5.1-cp39-abi3-win_amd64.whl.metadata (2.9 kB)
+2025-07-03 16:28:37.854 [info] Collecting pyzmq>=17 (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:37.867 [info]   Downloading pyzmq-27.0.0-cp311-cp311-win_amd64.whl.metadata (6.0 kB)
+2025-07-03 16:28:37.947 [info] Collecting argon2-cffi (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:37.957 [info]   Downloading argon2_cffi-25.1.0-py3-none-any.whl.metadata (4.1 kB)
+2025-07-03 16:28:38.060 [info] Collecting traitlets>=4.2.1 (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:38.098 [info]   Using cached traitlets-5.14.3-py3-none-any.whl.metadata (10 kB)
+2025-07-03 16:28:38.179 [info] Collecting jupyter-core>=4.6.1 (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:38.188 [info]   Downloading jupyter_core-5.8.1-py3-none-any.whl.metadata (1.6 kB)
+2025-07-03 16:28:38.260 [info] Collecting jupyter-client>=5.3.4 (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:38.270 [info]   Downloading jupyter_client-8.6.3-py3-none-any.whl.metadata (8.3 kB)
+2025-07-03 16:28:38.342 [info] Collecting ipython-genutils (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:38.353 [info]   Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl.metadata (755 bytes)
+2025-07-03 16:28:38.400 [info] Collecting nbformat (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:38.412 [info]   Downloading nbformat-5.10.4-py3-none-any.whl.metadata (3.6 kB)
+2025-07-03 16:28:38.484 [info] Collecting Send2Trash>=1.8.0 (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:38.496 [info]   Downloading Send2Trash-1.8.3-py3-none-any.whl.metadata (4.0 kB)
+2025-07-03 16:28:38.551 [info] Collecting terminado>=0.8.3 (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:38.566 [info]   Downloading terminado-0.18.1-py3-none-any.whl.metadata (5.8 kB)
+2025-07-03 16:28:38.629 [info] Collecting prometheus-client (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:38.638 [info]   Downloading prometheus_client-0.22.1-py3-none-any.whl.metadata (1.9 kB)
+2025-07-03 16:28:38.688 [info] Collecting nbclassic>=0.4.7 (from notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:38.698 [info]   Downloading nbclassic-1.3.1-py3-none-any.whl.metadata (5.5 kB)
+2025-07-03 16:28:38.935 [info] Collecting llvmlite<0.41,>=0.40.0dev0 (from numba==0.57.1->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 16))
+2025-07-03 16:28:38.936 [info] 
+2025-07-03 16:28:39.188 [info]   Downloading llvmlite-0.40.1-cp311-cp311-win_amd64.whl.metadata (4.8 kB)
+2025-07-03 16:28:39.253 [info] Collecting colorama>=0.3.4 (from loguru==0.7.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 20))
+2025-07-03 16:28:39.281 [info]   Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2025-07-03 16:28:39.364 [info] Collecting win32-setctime>=1.0.0 (from loguru==0.7.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 20))
+2025-07-03 16:28:39.375 [info]   Downloading win32_setctime-1.2.0-py3-none-any.whl.metadata (2.4 kB)
+2025-07-03 16:28:39.461 [info] Collecting absl-py>=1.0.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:39.469 [info]   Downloading absl_py-2.3.1-py3-none-any.whl.metadata (3.3 kB)
+2025-07-03 16:28:39.518 [info] Collecting astunparse>=1.6.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:39.548 [info]   Using cached astunparse-1.6.3-py2.py3-none-any.whl.metadata (4.4 kB)
+2025-07-03 16:28:39.597 [info] Collecting flatbuffers>=23.5.26 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:39.612 [info]   Using cached flatbuffers-25.2.10-py2.py3-none-any.whl.metadata (875 bytes)
+2025-07-03 16:28:39.665 [info] Collecting gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:39.690 [info]   Using cached gast-0.6.0-py3-none-any.whl.metadata (1.3 kB)
+2025-07-03 16:28:39.736 [info] Collecting google-pasta>=0.1.1 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:39.760 [info]   Using cached google_pasta-0.2.0-py3-none-any.whl.metadata (814 bytes)
+2025-07-03 16:28:39.848 [info] Collecting h5py>=2.9.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:39.861 [info]   Downloading h5py-3.14.0-cp311-cp311-win_amd64.whl.metadata (2.7 kB)
+2025-07-03 16:28:39.936 [info] Collecting libclang>=13.0.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:39.978 [info]   Using cached libclang-18.1.1-py2.py3-none-win_amd64.whl.metadata (5.3 kB)
+2025-07-03 16:28:40.045 [info] Collecting ml-dtypes~=0.2.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:40.057 [info]   Downloading ml_dtypes-0.2.0-cp311-cp311-win_amd64.whl.metadata (20 kB)
+2025-07-03 16:28:40.155 [info] Collecting opt-einsum>=2.3.2 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:40.171 [info]   Using cached opt_einsum-3.4.0-py3-none-any.whl.metadata (6.3 kB)
+2025-07-03 16:28:40.547 [info] Collecting protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:40.566 [info]   Downloading protobuf-4.25.8-cp310-abi3-win_amd64.whl.metadata (541 bytes)
+2025-07-03 16:28:40.618 [info] Collecting six>=1.12.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:40.649 [info]   Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-07-03 16:28:40.696 [info] Collecting termcolor>=1.1.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:40.729 [info]   Using cached termcolor-3.1.0-py3-none-any.whl.metadata (6.4 kB)
+2025-07-03 16:28:40.886 [info] Collecting wrapt<1.15,>=1.11.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:40.905 [info]   Downloading wrapt-1.14.1-cp311-cp311-win_amd64.whl.metadata (6.9 kB)
+2025-07-03 16:28:41.001 [info] Collecting tensorflow-io-gcs-filesystem>=0.23.1 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:41.032 [info]   Using cached tensorflow_io_gcs_filesystem-0.31.0-cp311-cp311-win_amd64.whl.metadata (14 kB)
+2025-07-03 16:28:41.825 [info] Collecting grpcio<2.0,>=1.24.3 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:41.849 [info]   Using cached grpcio-1.73.1-cp311-cp311-win_amd64.whl.metadata (4.0 kB)
+2025-07-03 16:28:41.907 [info] Collecting tensorboard<2.16,>=2.15 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:41.916 [info]   Downloading tensorboard-2.15.2-py3-none-any.whl.metadata (1.7 kB)
+2025-07-03 16:28:41.967 [info] Collecting tensorflow-estimator<2.16,>=2.15.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:41.977 [info]   Downloading tensorflow_estimator-2.15.0-py2.py3-none-any.whl.metadata (1.3 kB)
+2025-07-03 16:28:42.056 [info] Collecting keras<2.16,>=2.15.0 (from tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:42.066 [info]   Downloading keras-2.15.0-py3-none-any.whl.metadata (2.4 kB)
+2025-07-03 16:28:42.115 [info] Collecting itsdangerous>=2.1.2 (from Flask<3.1,>=1.0.4->dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:42.125 [info]   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+2025-07-03 16:28:42.184 [info] Collecting click>=8.1.3 (from Flask<3.1,>=1.0.4->dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:42.214 [info]   Using cached click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+2025-07-03 16:28:42.244 [info] Collecting blinker>=1.6.2 (from Flask<3.1,>=1.0.4->dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:42.252 [info]   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+2025-07-03 16:28:42.420 [info] Collecting google-auth<3,>=1.6.3 (from tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:42.430 [info]   Downloading google_auth-2.40.3-py2.py3-none-any.whl.metadata (6.2 kB)
+2025-07-03 16:28:42.491 [info] Collecting google-auth-oauthlib<2,>=0.5 (from tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:42.502 [info]   Downloading google_auth_oauthlib-1.2.2-py3-none-any.whl.metadata (2.7 kB)
+2025-07-03 16:28:42.579 [info] Collecting markdown>=2.6.8 (from tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:42.595 [info]   Using cached markdown-3.8.2-py3-none-any.whl.metadata (5.1 kB)
+2025-07-03 16:28:42.765 [info] Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:42.788 [info]   Using cached tensorboard_data_server-0.7.2-py3-none-any.whl.metadata (1.1 kB)
+2025-07-03 16:28:42.837 [info] Collecting cachetools<6.0,>=2.0.0 (from google-auth<3,>=1.6.3->tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:42.846 [info]   Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+2025-07-03 16:28:42.891 [info] Collecting pyasn1-modules>=0.2.1 (from google-auth<3,>=1.6.3->tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:42.900 [info]   Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+2025-07-03 16:28:42.969 [info] Collecting rsa<5,>=3.1.4 (from google-auth<3,>=1.6.3->tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:42.998 [info]   Using cached rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+2025-07-03 16:28:43.058 [info] Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<2,>=0.5->tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:43.080 [info]   Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+2025-07-03 16:28:43.252 [info] Collecting charset_normalizer<4,>=2 (from requests>=2.26->yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:43.293 [info]   Using cached charset_normalizer-3.4.2-cp311-cp311-win_amd64.whl.metadata (36 kB)
+2025-07-03 16:28:43.381 [info] Collecting idna<4,>=2.5 (from requests>=2.26->yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:43.413 [info]   Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+2025-07-03 16:28:43.516 [info] Collecting urllib3<3,>=1.21.1 (from requests>=2.26->yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:43.552 [info]   Using cached urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+2025-07-03 16:28:43.609 [info] Collecting certifi>=2017.4.17 (from requests>=2.26->yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:43.638 [info]   Using cached certifi-2025.6.15-py3-none-any.whl.metadata (2.4 kB)
+2025-07-03 16:28:43.707 [info] Collecting pyasn1>=0.1.3 (from rsa<5,>=3.1.4->google-auth<3,>=1.6.3->tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:43.739 [info]   Using cached pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+2025-07-03 16:28:43.875 [info] Collecting MarkupSafe>=2.1.1 (from Werkzeug<3.1->dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:43.889 [info]   Using cached MarkupSafe-3.0.2-cp311-cp311-win_amd64.whl.metadata (4.1 kB)
+2025-07-03 16:28:43.945 [info] Collecting geocoder (from projectpro->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 11))
+2025-07-03 16:28:43.955 [info]   Downloading geocoder-1.38.1-py2.py3-none-any.whl.metadata (14 kB)
+2025-07-03 16:28:44.030 [info] Collecting comm>=0.1.1 (from ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:44.039 [info]   Downloading comm-0.2.2-py3-none-any.whl.metadata (3.7 kB)
+2025-07-03 16:28:44.191 [info] Collecting debugpy>=1.6.5 (from ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:44.200 [info]   Downloading debugpy-1.8.14-cp311-cp311-win_amd64.whl.metadata (1.4 kB)
+2025-07-03 16:28:44.322 [info] Collecting ipython>=7.23.1 (from ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:44.332 [info]   Downloading ipython-9.4.0-py3-none-any.whl.metadata (4.4 kB)
+2025-07-03 16:28:44.430 [info] Collecting matplotlib-inline>=0.1 (from ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:44.457 [info]   Using cached matplotlib_inline-0.1.7-py3-none-any.whl.metadata (3.9 kB)
+2025-07-03 16:28:44.584 [info] Collecting psutil (from ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:44.604 [info]   Downloading psutil-7.0.0-cp37-abi3-win_amd64.whl.metadata (23 kB)
+2025-07-03 16:28:44.732 [info] Collecting wheel<1.0,>=0.23.0 (from astunparse>=1.6.0->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:44.761 [info]   Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-07-03 16:28:44.827 [info] Collecting soupsieve>1.2 (from beautifulsoup4>=4.11.1->yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:44.860 [info]   Using cached soupsieve-2.7-py3-none-any.whl.metadata (4.6 kB)
+2025-07-03 16:28:45.198 [info] Collecting cffi>=1.14 (from cryptography>=3.3.2->yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:45.233 [info]   Using cached cffi-1.17.1-cp311-cp311-win_amd64.whl.metadata (1.6 kB)
+2025-07-03 16:28:45.284 [info] Collecting pycparser (from cffi>=1.14->cryptography>=3.3.2->yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:45.307 [info]   Using cached pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+2025-07-03 16:28:45.387 [info] Collecting webencodings (from html5lib>=1.1->yfinance==0.2.20->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 8))
+2025-07-03 16:28:45.397 [info]   Downloading webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+2025-07-03 16:28:45.467 [info] Collecting decorator (from ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:45.495 [info]   Using cached decorator-5.2.1-py3-none-any.whl.metadata (3.9 kB)
+2025-07-03 16:28:45.539 [info] Collecting ipython-pygments-lexers (from ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:45.564 [info]   Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl.metadata (1.1 kB)
+2025-07-03 16:28:45.612 [info] Collecting jedi>=0.16 (from ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:45.638 [info]   Using cached jedi-0.19.2-py2.py3-none-any.whl.metadata (22 kB)
+2025-07-03 16:28:45.753 [info] Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:45.767 [info]   Using cached prompt_toolkit-3.0.51-py3-none-any.whl.metadata (6.4 kB)
+2025-07-03 16:28:45.827 [info] Collecting pygments>=2.4.0 (from ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:45.853 [info]   Using cached pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+2025-07-03 16:28:45.901 [info] Collecting stack_data (from ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:45.929 [info]   Using cached stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+2025-07-03 16:28:46.031 [info] Collecting wcwidth (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:46.065 [info]   Using cached wcwidth-0.2.13-py2.py3-none-any.whl.metadata (14 kB)
+2025-07-03 16:28:46.163 [info] Collecting parso<0.9.0,>=0.8.4 (from jedi>=0.16->ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:46.178 [info]   Using cached parso-0.8.4-py2.py3-none-any.whl.metadata (7.7 kB)
+2025-07-03 16:28:46.281 [info] Collecting platformdirs>=2.5 (from jupyter-core>=4.6.1->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:46.312 [info]   Using cached platformdirs-4.3.8-py3-none-any.whl.metadata (12 kB)
+2025-07-03 16:28:46.393 [info] Collecting pywin32>=300 (from jupyter-core>=4.6.1->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:46.409 [info]   Downloading pywin32-310-cp311-cp311-win_amd64.whl.metadata (9.4 kB)
+2025-07-03 16:28:46.512 [info] Collecting notebook-shim>=0.2.3 (from nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:46.522 [info]   Downloading notebook_shim-0.2.4-py3-none-any.whl.metadata (4.0 kB)
+2025-07-03 16:28:46.579 [info] Collecting bleach!=5.0.0 (from bleach[css]!=5.0.0->nbconvert->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:46.589 [info]   Downloading bleach-6.2.0-py3-none-any.whl.metadata (30 kB)
+2025-07-03 16:28:46.653 [info] Collecting defusedxml (from nbconvert->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:46.662 [info]   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+2025-07-03 16:28:46.743 [info] Collecting jupyterlab-pygments (from nbconvert->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:46.759 [info]   Downloading jupyterlab_pygments-0.3.0-py3-none-any.whl.metadata (4.4 kB)
+2025-07-03 16:28:46.803 [info] Collecting mistune<4,>=2.0.3 (from nbconvert->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:46.813 [info]   Downloading mistune-3.1.3-py3-none-any.whl.metadata (1.8 kB)
+2025-07-03 16:28:46.855 [info] Collecting nbclient>=0.5.0 (from nbconvert->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:46.869 [info]   Downloading nbclient-0.10.2-py3-none-any.whl.metadata (8.3 kB)
+2025-07-03 16:28:46.945 [info] Collecting pandocfilters>=1.4.1 (from nbconvert->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:46.958 [info]   Downloading pandocfilters-1.5.1-py2.py3-none-any.whl.metadata (9.0 kB)
+2025-07-03 16:28:47.054 [info] Collecting tinycss2<1.5,>=1.1.0 (from bleach[css]!=5.0.0->nbconvert->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:47.068 [info]   Downloading tinycss2-1.4.0-py3-none-any.whl.metadata (3.0 kB)
+2025-07-03 16:28:47.140 [info] Collecting fastjsonschema>=2.15 (from nbformat->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:47.149 [info]   Downloading fastjsonschema-2.21.1-py3-none-any.whl.metadata (2.2 kB)
+2025-07-03 16:28:47.206 [info] Collecting jsonschema>=2.6 (from nbformat->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:47.215 [info]   Downloading jsonschema-4.24.0-py3-none-any.whl.metadata (7.8 kB)
+2025-07-03 16:28:47.297 [info] Collecting attrs>=22.2.0 (from jsonschema>=2.6->nbformat->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:47.333 [info]   Using cached attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+2025-07-03 16:28:47.399 [info] Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=2.6->nbformat->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:47.409 [info]   Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl.metadata (2.9 kB)
+2025-07-03 16:28:47.490 [info] Collecting referencing>=0.28.4 (from jsonschema>=2.6->nbformat->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:47.502 [info]   Downloading referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
+2025-07-03 16:28:47.928 [info] Collecting rpds-py>=0.7.1 (from jsonschema>=2.6->nbformat->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:47.947 [info]   Downloading rpds_py-0.26.0-cp311-cp311-win_amd64.whl.metadata (4.3 kB)
+2025-07-03 16:28:48.067 [info] Collecting jupyter-server<3,>=1.8 (from notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.079 [info]   Downloading jupyter_server-2.16.0-py3-none-any.whl.metadata (8.5 kB)
+2025-07-03 16:28:48.177 [info] Collecting anyio>=3.1.0 (from jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.210 [info]   Using cached anyio-4.9.0-py3-none-any.whl.metadata (4.7 kB)
+2025-07-03 16:28:48.258 [info] Collecting jupyter-events>=0.11.0 (from jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.266 [info]   Downloading jupyter_events-0.12.0-py3-none-any.whl.metadata (5.8 kB)
+2025-07-03 16:28:48.319 [info] Collecting jupyter-server-terminals>=0.4.4 (from jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.328 [info]   Downloading jupyter_server_terminals-0.5.3-py3-none-any.whl.metadata (5.6 kB)
+2025-07-03 16:28:48.451 [info] Collecting overrides>=5.0 (from jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.468 [info]   Downloading overrides-7.7.0-py3-none-any.whl.metadata (5.8 kB)
+2025-07-03 16:28:48.534 [info] Collecting pywinpty>=2.0.1 (from jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.547 [info]   Downloading pywinpty-2.0.15-cp311-cp311-win_amd64.whl.metadata (5.2 kB)
+2025-07-03 16:28:48.662 [info] Collecting websocket-client>=1.7 (from jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.704 [info]   Using cached websocket_client-1.8.0-py3-none-any.whl.metadata (8.0 kB)
+2025-07-03 16:28:48.760 [info] Collecting sniffio>=1.1 (from anyio>=3.1.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.799 [info]   Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2025-07-03 16:28:48.841 [info] Collecting argon2-cffi-bindings (from argon2-cffi->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.851 [info]   Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-win_amd64.whl.metadata (6.7 kB)
+2025-07-03 16:28:48.922 [info] Collecting python-json-logger>=2.0.4 (from jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:48.932 [info]   Downloading python_json_logger-3.3.0-py3-none-any.whl.metadata (4.0 kB)
+2025-07-03 16:28:49.022 [info] Collecting pyyaml>=5.3 (from jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:49.032 [info]   Downloading PyYAML-6.0.2-cp311-cp311-win_amd64.whl.metadata (2.1 kB)
+2025-07-03 16:28:49.078 [info] Collecting rfc3339-validator (from jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:49.088 [info]   Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl.metadata (1.5 kB)
+2025-07-03 16:28:49.188 [info] Collecting rfc3986-validator>=0.1.1 (from jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:49.197 [info]   Downloading rfc3986_validator-0.1.1-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-07-03 16:28:49.244 [info] Collecting fqdn (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:49.254 [info]   Downloading fqdn-1.5.1-py3-none-any.whl.metadata (1.4 kB)
+2025-07-03 16:28:49.288 [info] Collecting isoduration (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:49.297 [info]   Downloading isoduration-20.11.0-py3-none-any.whl.metadata (5.7 kB)
+2025-07-03 16:28:49.360 [info] Collecting jsonpointer>1.13 (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:49.370 [info]   Downloading jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+2025-07-03 16:28:49.412 [info] Collecting uri-template (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:49.427 [info]   Downloading uri_template-1.3.0-py3-none-any.whl.metadata (8.8 kB)
+2025-07-03 16:28:49.497 [info] Collecting webcolors>=24.6.0 (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:49.509 [info]   Downloading webcolors-24.11.1-py3-none-any.whl.metadata (2.2 kB)
+2025-07-03 16:28:49.810 [info] Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<2,>=0.5->tensorboard<2.16,>=2.15->tensorflow-intel==2.15.0->tensorflow==2.15.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 1))
+2025-07-03 16:28:49.819 [info]   Downloading oauthlib-3.3.1-py3-none-any.whl.metadata (7.9 kB)
+2025-07-03 16:28:49.898 [info] INFO: pip is looking at multiple versions of scipy to determine which version is compatible with other requirements. This could take a while.
+2025-07-03 16:28:49.900 [info] Collecting scipy>=1.5.0 (from scikit-learn==1.3.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 4))
+2025-07-03 16:28:49.910 [info]   Downloading scipy-1.15.3-cp311-cp311-win_amd64.whl.metadata (60 kB)
+2025-07-03 16:28:50.210 [info] Collecting future (from geocoder->projectpro->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 11))
+2025-07-03 16:28:50.220 [info]   Downloading future-1.0.0-py3-none-any.whl.metadata (4.0 kB)
+2025-07-03 16:28:50.250 [info] Collecting ratelim (from geocoder->projectpro->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 11))
+2025-07-03 16:28:50.261 [info]   Downloading ratelim-0.1.6-py2.py3-none-any.whl.metadata (1.4 kB)
+2025-07-03 16:28:50.335 [info] Collecting zipp>=3.20 (from importlib-metadata->dash==2.14.2->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 13))
+2025-07-03 16:28:50.345 [info]   Downloading zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+2025-07-03 16:28:50.495 [info] Collecting widgetsnbextension~=4.0.14 (from ipywidgets->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:50.506 [info]   Downloading widgetsnbextension-4.0.14-py3-none-any.whl.metadata (1.6 kB)
+2025-07-03 16:28:50.561 [info] Collecting jupyterlab_widgets~=3.0.15 (from ipywidgets->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:50.571 [info]   Downloading jupyterlab_widgets-3.0.15-py3-none-any.whl.metadata (20 kB)
+2025-07-03 16:28:50.673 [info] Collecting arrow>=0.15.0 (from isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:50.681 [info]   Downloading arrow-1.3.0-py3-none-any.whl.metadata (7.5 kB)
+2025-07-03 16:28:50.775 [info] Collecting types-python-dateutil>=2.8.10 (from arrow>=0.15.0->isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=1.8->notebook-shim>=0.2.3->nbclassic>=0.4.7->notebook==6.5.4->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 15))
+2025-07-03 16:28:50.784 [info]   Downloading types_python_dateutil-2.9.0.20250516-py3-none-any.whl.metadata (2.1 kB)
+2025-07-03 16:28:50.962 [info] Collecting qtpy>=2.4.0 (from qtconsole->jupyter==1.0.0->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 14))
+2025-07-03 16:28:50.972 [info]   Downloading QtPy-2.4.3-py3-none-any.whl.metadata (12 kB)
+2025-07-03 16:28:51.090 [info] Collecting executing>=1.2.0 (from stack_data->ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:51.124 [info]   Using cached executing-2.2.0-py2.py3-none-any.whl.metadata (8.9 kB)
+2025-07-03 16:28:51.209 [info] Collecting asttokens>=2.1.0 (from stack_data->ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:51.224 [info]   Using cached asttokens-3.0.0-py3-none-any.whl.metadata (4.7 kB)
+2025-07-03 16:28:51.271 [info] Collecting pure-eval (from stack_data->ipython>=7.23.1->ipykernel->-r c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\requirements.txt (line 21))
+2025-07-03 16:28:51.289 [info]   Using cached pure_eval-0.2.3-py3-none-any.whl.metadata (6.3 kB)
+2025-07-03 16:28:51.344 [info] Downloading tensorflow-2.15.0-cp311-cp311-win_amd64.whl (2.1 kB)
+2025-07-03 16:28:51.363 [info] Downloading numpy-1.24.3-cp311-cp311-win_amd64.whl (14.8 MB)
+2025-07-03 16:28:52.099 [info] 
+2025-07-03 16:28:52.099 [info] ---------------------------------------- 14.8/14.8 MB 20.7 MB/s eta 0:00:00
+2025-07-03 16:28:52.100 [info] 
+2025-07-03 16:28:52.108 [info] Downloading pandas-2.0.3-cp311-cp311-win_amd64.whl (10.6 MB)
+2025-07-03 16:28:52.637 [info] 
+2025-07-03 16:28:52.637 [info] ---------------------------------------- 10.6/10.6 MB 20.0 MB/s eta 0:00:00
+2025-07-03 16:28:52.637 [info] 
+2025-07-03 16:28:52.646 [info] Downloading scikit_learn-1.3.0-cp311-cp311-win_amd64.whl (9.2 MB)
+2025-07-03 16:28:53.116 [info]    ----------------------------------------
+2025-07-03 16:28:53.116 [info]  9.2/9.2 MB 20.4 MB/s eta 0:00:00
+2025-07-03 16:28:53.116 [info] 
+2025-07-03 16:28:53.125 [info] Downloading statsmodels-0.14.0-cp311-cp311-win_amd64.whl (9.2 MB)
+2025-07-03 16:28:53.599 [info] 
+2025-07-03 16:28:53.599 [info] ---------------------------------------- 9.2/9.2 MB 19.1 MB/s eta 0:00:00
+2025-07-03 16:28:53.600 [info] 
+2025-07-03 16:28:53.608 [info] Downloading matplotlib-3.7.1-cp311-cp311-win_amd64.whl (7.6 MB)
+2025-07-03 16:28:53.993 [info] 
+2025-07-03 16:28:53.994 [info] ---------------------------------------- 7.6/7.6 MB 19.6 MB/s eta 0:00:00
+2025-07-03 16:28:54.003 [info] Downloading seaborn-0.12.2-py3-none-any.whl (293 kB)
+2025-07-03 16:28:54.035 [info] Downloading yfinance-0.2.20-py2.py3-none-any.whl (62 kB)
+2025-07-03 16:28:54.050 [info] Downloading pandas_datareader-0.10.0-py3-none-any.whl (109 kB)
+2025-07-03 16:28:54.078 [info] Downloading plotly-5.15.0-py2.py3-none-any.whl (15.5 MB)
+2025-07-03 16:28:54.857 [info]    ---------------------------------------- 15.5/15.5 MB
+2025-07-03 16:28:54.858 [info]  19.9 MB/s eta 0:00:00
+2025-07-03 16:28:54.870 [info] Downloading dash-2.14.2-py3-none-any.whl (10.2 MB)
+2025-07-03 16:28:55.369 [info] 
+2025-07-03 16:28:55.369 [info] ---------------------------------------- 10.2/10.2 MB 20.5 MB/s eta 0:00:00
+2025-07-03 16:28:55.370 [info] 
+2025-07-03 16:28:55.378 [info] Downloading jupyter-1.0.0-py2.py3-none-any.whl (2.7 kB)
+2025-07-03 16:28:55.392 [info] Downloading notebook-6.5.4-py3-none-any.whl (529 kB)
+2025-07-03 16:28:55.429 [info] 
+2025-07-03 16:28:55.429 [info]  ---------------------------------------- 529.8/529.8 kB 8.4 MB/s eta 0:00:00
+2025-07-03 16:28:55.438 [info] Downloading numba-0.57.1-cp311-cp311-win_amd64.whl (2.6 MB)
+2025-07-03 16:28:55.574 [info]    ---------------------------------------- 2.6/2.6 MB 21.1 MB/s eta
+2025-07-03 16:28:55.574 [info] 0:00:00
+2025-07-03 16:28:55.591 [info] Downloading joblib-1.3.1-py3-none-any.whl (301 kB)
+2025-07-03 16:28:55.640 [info] Using cached python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+2025-07-03 16:28:55.649 [info] Downloading configparser-5.3.0-py3-none-any.whl (19 kB)
+2025-07-03 16:28:55.663 [info] Downloading loguru-0.7.0-py3-none-any.whl (59 kB)
+2025-07-03 16:28:55.681 [info] Downloading dash_core_components-2.0.0-py3-none-any.whl (3.8 kB)
+2025-07-03 16:28:55.696 [info] Downloading dash_html_components-2.0.0-py3-none-any.whl (4.1 kB)
+2025-07-03 16:28:55.711 [info] Downloading dash_table-5.0.0-py3-none-any.whl (3.9 kB)
+2025-07-03 16:28:55.730 [info] Downloading tensorflow_intel-2.15.0-cp311-cp311-win_amd64.whl (300.9 MB)
+2025-07-03 16:29:12.859 [info] 
+2025-07-03 16:29:12.859 [info] --------------------------------------- 300.9/300.9 MB 17.3 MB/s eta 0:00:00
+2025-07-03 16:29:12.869 [info] Downloading flask-3.0.3-py3-none-any.whl (101 kB)
+2025-07-03 16:29:12.920 [info] Using cached grpcio-1.73.1-cp311-cp311-win_amd64.whl (4.3 MB)
+2025-07-03 16:29:12.950 [info] Downloading keras-2.15.0-py3-none-any.whl (1.7 MB)
+2025-07-03 16:29:13.016 [info]    ---------------------------------------- 1.7/1.7 MB 45.3 MB/s eta
+2025-07-03 16:29:13.016 [info] 0:00:00
+2025-07-03 16:29:13.030 [info] Downloading llvmlite-0.40.1-cp311-cp311-win_amd64.whl (27.7 MB)
+2025-07-03 16:29:14.476 [info] 
+2025-07-03 16:29:14.476 [info] ---------------------------------------- 27.7/27.7 MB 19.1 MB/s eta 0:00:00
+2025-07-03 16:29:14.484 [info] Downloading ml_dtypes-0.2.0-cp311-cp311-win_amd64.whl (938 kB)
+2025-07-03 16:29:14.528 [info]    --------------------------------------- 938.7/938.7 kB 21.8 MB/s eta 0:00:00
+2025-07-03 16:29:14.528 [info] 
+2025-07-03 16:29:14.537 [info] Downloading protobuf-4.25.8-cp310-abi3-win_amd64.whl (413 kB)
+2025-07-03 16:29:14.567 [info] Downloading tensorboard-2.15.2-py3-none-any.whl (5.5 MB)
+2025-07-03 16:29:14.809 [info]    ---------------------------------------- 5.5/5.5 MB
+2025-07-03 16:29:14.810 [info]  24.1 MB/s eta 0:00:00
+2025-07-03 16:29:14.810 [info] 
+2025-07-03 16:29:14.820 [info] Downloading google_auth-2.40.3-py2.py3-none-any.whl (216 kB)
+2025-07-03 16:29:14.840 [info] Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+2025-07-03 16:29:14.856 [info] Downloading google_auth_oauthlib-1.2.2-py3-none-any.whl (19 kB)
+2025-07-03 16:29:14.888 [info] Using cached requests-2.32.4-py3-none-any.whl (64 kB)
+2025-07-03 16:29:14.917 [info] Using cached charset_normalizer-3.4.2-cp311-cp311-win_amd64.whl (105 kB)
+2025-07-03 16:29:14.942 [info] Using cached idna-3.10-py3-none-any.whl (70 kB)
+2025-07-03 16:29:14.967 [info] Using cached rsa-4.9.1-py3-none-any.whl (34 kB)
+2025-07-03 16:29:14.992 [info] Using cached tensorboard_data_server-0.7.2-py3-none-any.whl (2.4 kB)
+2025-07-03 16:29:15.010 [info] Downloading tensorflow_estimator-2.15.0-py2.py3-none-any.whl (441 kB)
+2025-07-03 16:29:15.051 [info] Using cached urllib3-2.5.0-py3-none-any.whl (129 kB)
+2025-07-03 16:29:15.060 [info] Downloading werkzeug-3.0.6-py3-none-any.whl (227 kB)
+2025-07-03 16:29:15.083 [info] Downloading wrapt-1.14.1-cp311-cp311-win_amd64.whl (35 kB)
+2025-07-03 16:29:15.099 [info] Downloading projectpro-0.0.30-py3-none-any.whl (8.1 kB)
+2025-07-03 16:29:15.116 [info] Downloading ipykernel-6.29.5-py3-none-any.whl (117 kB)
+2025-07-03 16:29:15.135 [info] Downloading absl_py-2.3.1-py3-none-any.whl (135 kB)
+2025-07-03 16:29:15.151 [info] Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+2025-07-03 16:29:15.182 [info] Using cached astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+2025-07-03 16:29:15.207 [info] Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-07-03 16:29:15.235 [info] Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-07-03 16:29:15.265 [info] Using cached beautifulsoup4-4.13.4-py3-none-any.whl (187 kB)
+2025-07-03 16:29:15.277 [info] Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+2025-07-03 16:29:15.310 [info] Using cached certifi-2025.6.15-py3-none-any.whl (157 kB)
+2025-07-03 16:29:15.320 [info] Downloading click-8.2.1-py3-none-any.whl (102 kB)
+2025-07-03 16:29:15.349 [info] Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-07-03 16:29:15.357 [info] Downloading comm-0.2.2-py3-none-any.whl (7.2 kB)
+2025-07-03 16:29:15.372 [info] Downloading contourpy-1.3.2-cp311-cp311-win_amd64.whl (222 kB)
+2025-07-03 16:29:15.395 [info] Downloading cryptography-45.0.5-cp311-abi3-win_amd64.whl (3.4 MB)
+2025-07-03 16:29:15.549 [info]    ---------------------------------------- 3.4/3.4 MB 25.1 MB/s eta 0:00:00
+2025-07-03 16:29:15.550 [info] 
+2025-07-03 16:29:15.575 [info] Using cached cffi-1.17.1-cp311-cp311-win_amd64.whl (181 kB)
+2025-07-03 16:29:15.600 [info] Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2025-07-03 16:29:15.609 [info] Downloading debugpy-1.8.14-cp311-cp311-win_amd64.whl (5.2 MB)
+2025-07-03 16:29:15.838 [info]    ---------------------------------------- 5.2/5.2 MB 22.4 MB/s eta
+2025-07-03 16:29:15.838 [info] 0:00:00
+2025-07-03 16:29:15.863 [info] Using cached flatbuffers-25.2.10-py2.py3-none-any.whl (30 kB)
+2025-07-03 16:29:15.874 [info] Downloading fonttools-4.58.4-cp311-cp311-win_amd64.whl (2.2 MB)
+2025-07-03 16:29:15.989 [info] 
+2025-07-03 16:29:15.989 [info] ---------------------------------------- 2.2/2.2 MB 18.2 MB/s eta 0:00:00
+2025-07-03 16:29:16.043 [info] Downloading frozendict-2.4.6-py311-none-any.whl (16 kB)
+2025-07-03 16:29:16.073 [info] Using cached gast-0.6.0-py3-none-any.whl (21 kB)
+2025-07-03 16:29:16.099 [info] Using cached google_pasta-0.2.0-py3-none-any.whl (57 kB)
+2025-07-03 16:29:16.110 [info] Downloading h5py-3.14.0-cp311-cp311-win_amd64.whl (2.9 MB)
+2025-07-03 16:29:16.223 [info] 
+2025-07-03 16:29:16.223 [info] ---------------------------------------- 2.9/2.9 MB 33.5 MB/s eta 0:00:00
+2025-07-03 16:29:16.232 [info] Downloading html5lib-1.1-py2.py3-none-any.whl (112 kB)
+2025-07-03 16:29:16.262 [info] Downloading ipython-9.4.0-py3-none-any.whl (611 kB)
+2025-07-03 16:29:16.289 [info]    --------------------------------------- 611.0/611.0 kB
+2025-07-03 16:29:16.290 [info]  21.8 MB/s eta 0:00:00
+2025-07-03 16:29:16.319 [info] Using cached prompt_toolkit-3.0.51-py3-none-any.whl (387 kB)
+2025-07-03 16:29:16.335 [info] Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+2025-07-03 16:29:16.377 [info] Using cached jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+2025-07-03 16:29:16.408 [info] Using cached parso-0.8.4-py2.py3-none-any.whl (103 kB)
+2025-07-03 16:29:16.438 [info] Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+2025-07-03 16:29:16.446 [info] Downloading jupyter_client-8.6.3-py3-none-any.whl (106 kB)
+2025-07-03 16:29:16.465 [info] Downloading jupyter_core-5.8.1-py3-none-any.whl (28 kB)
+2025-07-03 16:29:16.499 [info] Downloading kiwisolver-1.4.8-cp311-cp311-win_amd64.whl (71 kB)
+2025-07-03 16:29:16.526 [info] Using cached libclang-18.1.1-py2.py3-none-win_amd64.whl (26.4 MB)
+2025-07-03 16:29:16.569 [info] Downloading lxml-6.0.0-cp311-cp311-win_amd64.whl (4.0 MB)
+2025-07-03 16:29:16.736 [info]    ---------------------------------------- 4.0/4.0 MB 29.9 MB/s
+2025-07-03 16:29:16.737 [info]  eta 0:00:00
+2025-07-03 16:29:16.737 [info] 
+2025-07-03 16:29:16.764 [info] Using cached markdown-3.8.2-py3-none-any.whl (106 kB)
+2025-07-03 16:29:16.790 [info] Using cached MarkupSafe-3.0.2-cp311-cp311-win_amd64.whl (15 kB)
+2025-07-03 16:29:16.813 [info] Using cached matplotlib_inline-0.1.7-py3-none-any.whl (9.9 kB)
+2025-07-03 16:29:16.837 [info] Using cached multitasking-0.0.11-py3-none-any.whl (8.5 kB)
+2025-07-03 16:29:16.846 [info] Downloading nbclassic-1.3.1-py3-none-any.whl (26.2 MB)
+2025-07-03 16:29:18.226 [info]    ----------------------------------------
+2025-07-03 16:29:18.226 [info] 26.2/26.2 MB 19.3 MB/s eta 0:00:00
+2025-07-03 16:29:18.237 [info] Downloading nbconvert-7.16.6-py3-none-any.whl (258 kB)
+2025-07-03 16:29:18.260 [info] Downloading mistune-3.1.3-py3-none-any.whl (53 kB)
+2025-07-03 16:29:18.275 [info] Downloading bleach-6.2.0-py3-none-any.whl (163 kB)
+2025-07-03 16:29:18.294 [info] Downloading tinycss2-1.4.0-py3-none-any.whl (26 kB)
+2025-07-03 16:29:18.309 [info] Downloading nbclient-0.10.2-py3-none-any.whl (25 kB)
+2025-07-03 16:29:18.324 [info] Downloading nbformat-5.10.4-py3-none-any.whl (78 kB)
+2025-07-03 16:29:18.339 [info] Downloading fastjsonschema-2.21.1-py3-none-any.whl (23 kB)
+2025-07-03 16:29:18.352 [info] Downloading jsonschema-4.24.0-py3-none-any.whl (88 kB)
+2025-07-03 16:29:18.387 [info] Using cached attrs-25.3.0-py3-none-any.whl (63 kB)
+2025-07-03 16:29:18.396 [info] Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl (18 kB)
+2025-07-03 16:29:18.411 [info] Downloading nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+2025-07-03 16:29:18.426 [info] Downloading notebook_shim-0.2.4-py3-none-any.whl (13 kB)
+2025-07-03 16:29:18.441 [info] Downloading jupyter_server-2.16.0-py3-none-any.whl (386 kB)
+2025-07-03 16:29:18.489 [info] Using cached anyio-4.9.0-py3-none-any.whl (100 kB)
+2025-07-03 16:29:18.498 [info] Downloading argon2_cffi-25.1.0-py3-none-any.whl (14 kB)
+2025-07-03 16:29:18.514 [info] Downloading jupyter_events-0.12.0-py3-none-any.whl (19 kB)
+2025-07-03 16:29:18.529 [info] Downloading jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+2025-07-03 16:29:18.544 [info] Downloading jupyter_server_terminals-0.5.3-py3-none-any.whl (13 kB)
+2025-07-03 16:29:18.577 [info] Using cached opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+2025-07-03 16:29:18.585 [info] Downloading overrides-7.7.0-py3-none-any.whl (17 kB)
+2025-07-03 16:29:18.616 [info] Using cached packaging-25.0-py3-none-any.whl (66 kB)
+2025-07-03 16:29:18.629 [info] Downloading pandocfilters-1.5.1-py2.py3-none-any.whl (8.7 kB)
+2025-07-03 16:29:18.648 [info] Downloading patsy-1.0.1-py2.py3-none-any.whl (232 kB)
+2025-07-03 16:29:18.667 [info] Downloading pillow-11.3.0-cp311-cp311-win_amd64.whl (7.0 MB)
+2025-07-03 16:29:18.971 [info]    ----------------------------------------
+2025-07-03 16:29:18.972 [info]  7.0/7.0 MB 23.9 MB/s eta 0:00:00
+2025-07-03 16:29:18.972 [info] 
+2025-07-03 16:29:18.996 [info] Using cached platformdirs-4.3.8-py3-none-any.whl (18 kB)
+2025-07-03 16:29:19.005 [info] Downloading prometheus_client-0.22.1-py3-none-any.whl (58 kB)
+2025-07-03 16:29:19.036 [info] Using cached pyasn1-0.6.1-py3-none-any.whl (83 kB)
+2025-07-03 16:29:19.044 [info] Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+2025-07-03 16:29:19.084 [info] Using cached pygments-2.19.2-py3-none-any.whl (1.2 MB)
+2025-07-03 16:29:19.115 [info] Using cached pyparsing-3.2.3-py3-none-any.whl (111 kB)
+2025-07-03 16:29:19.142 [info] Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-07-03 16:29:19.152 [info] Downloading python_json_logger-3.3.0-py3-none-any.whl (15 kB)
+2025-07-03 16:29:19.187 [info] Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+2025-07-03 16:29:19.196 [info] Downloading pywin32-310-cp311-cp311-win_amd64.whl (9.5 MB)
+2025-07-03 16:29:19.660 [info]    ----------------------------------------
+2025-07-03 16:29:19.660 [info]  9.5/9.5 MB 21.2 MB/s eta 0:00:00
+2025-07-03 16:29:19.670 [info] Downloading pywinpty-2.0.15-cp311-cp311-win_amd64.whl (1.4 MB)
+2025-07-03 16:29:19.756 [info] 
+2025-07-03 16:29:19.757 [info] ---------------------------------------- 1.4/1.4 MB 18.1 MB/s eta 0:00:00
+2025-07-03 16:29:19.767 [info] Downloading PyYAML-6.0.2-cp311-cp311-win_amd64.whl (161 kB)
+2025-07-03 16:29:19.799 [info] Downloading pyzmq-27.0.0-cp311-cp311-win_amd64.whl (630 kB)
+2025-07-03 16:29:19.828 [info]    ---------------------------------------
+2025-07-03 16:29:19.828 [info] 630.3/630.3 kB 24.5 MB/s eta 0:00:00
+2025-07-03 16:29:19.838 [info] Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+2025-07-03 16:29:19.853 [info] Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+2025-07-03 16:29:19.867 [info] Downloading oauthlib-3.3.1-py3-none-any.whl (160 kB)
+2025-07-03 16:29:19.885 [info] Downloading rfc3986_validator-0.1.1-py2.py3-none-any.whl (4.2 kB)
+2025-07-03 16:29:19.906 [info] Downloading rpds_py-0.26.0-cp311-cp311-win_amd64.whl (231 kB)
+2025-07-03 16:29:19.928 [info] Downloading scipy-1.15.3-cp311-cp311-win_amd64.whl (41.2 MB)
+2025-07-03 16:29:22.146 [info]    ---------------------------------------- 41.2/41.2 MB 18.9 MB/s eta 0:00:00
+2025-07-03 16:29:22.147 [info] 
+2025-07-03 16:29:22.155 [info] Downloading Send2Trash-1.8.3-py3-none-any.whl (18 kB)
+2025-07-03 16:29:22.185 [info] Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-07-03 16:29:22.210 [info] Using cached soupsieve-2.7-py3-none-any.whl (36 kB)
+2025-07-03 16:29:22.219 [info] Downloading tenacity-9.1.2-py3-none-any.whl (28 kB)
+2025-07-03 16:29:22.255 [info] Using cached tensorflow_io_gcs_filesystem-0.31.0-cp311-cp311-win_amd64.whl (1.5 MB)
+2025-07-03 16:29:22.282 [info] Using cached termcolor-3.1.0-py3-none-any.whl (7.7 kB)
+2025-07-03 16:29:22.292 [info] Downloading terminado-0.18.1-py3-none-any.whl (14 kB)
+2025-07-03 16:29:22.327 [info] Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2025-07-03 16:29:22.337 [info] Downloading tornado-6.5.1-cp39-abi3-win_amd64.whl (444 kB)
+2025-07-03 16:29:22.378 [info] Using cached traitlets-5.14.3-py3-none-any.whl (85 kB)
+2025-07-03 16:29:22.404 [info] Using cached typing_extensions-4.14.0-py3-none-any.whl (43 kB)
+2025-07-03 16:29:22.440 [info] Using cached tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+2025-07-03 16:29:22.451 [info] Downloading webcolors-24.11.1-py3-none-any.whl (14 kB)
+2025-07-03 16:29:22.468 [info] Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+2025-07-03 16:29:22.504 [info] Using cached websocket_client-1.8.0-py3-none-any.whl (58 kB)
+2025-07-03 16:29:22.516 [info] Downloading win32_setctime-1.2.0-py3-none-any.whl (4.1 kB)
+2025-07-03 16:29:22.534 [info] Downloading ansi2html-1.9.2-py3-none-any.whl (17 kB)
+2025-07-03 16:29:22.552 [info] Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-win_amd64.whl (30 kB)
+2025-07-03 16:29:22.593 [info] Using cached decorator-5.2.1-py3-none-any.whl (9.2 kB)
+2025-07-03 16:29:22.602 [info] Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+2025-07-03 16:29:22.616 [info] Downloading fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+2025-07-03 16:29:22.633 [info] Downloading geocoder-1.38.1-py2.py3-none-any.whl (98 kB)
+2025-07-03 16:29:22.650 [info] Downloading future-1.0.0-py3-none-any.whl (491 kB)
+2025-07-03 16:29:22.689 [info] Downloading importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+2025-07-03 16:29:22.704 [info] Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+2025-07-03 16:29:22.719 [info] Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+2025-07-03 16:29:22.741 [info] Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+2025-07-03 16:29:22.756 [info] Downloading ipywidgets-8.1.7-py3-none-any.whl (139 kB)
+2025-07-03 16:29:22.773 [info] Downloading jupyterlab_widgets-3.0.15-py3-none-any.whl (216 kB)
+2025-07-03 16:29:22.798 [info] Downloading widgetsnbextension-4.0.14-py3-none-any.whl (2.2 MB)
+2025-07-03 16:29:22.901 [info]    ---------------------------------------- 2.2/2.2 MB 24.8 MB/s eta 0:00:00
+2025-07-03 16:29:22.901 [info] 
+2025-07-03 16:29:22.910 [info] Downloading isoduration-20.11.0-py3-none-any.whl (11 kB)
+2025-07-03 16:29:22.932 [info] Downloading arrow-1.3.0-py3-none-any.whl (66 kB)
+2025-07-03 16:29:22.951 [info] Downloading types_python_dateutil-2.9.0.20250516-py3-none-any.whl (14 kB)
+2025-07-03 16:29:22.969 [info] Downloading jupyter_console-6.6.3-py3-none-any.whl (24 kB)
+2025-07-03 16:29:22.985 [info] Downloading jupyterlab_pygments-0.3.0-py3-none-any.whl (15 kB)
+2025-07-03 16:29:23.001 [info] Downloading psutil-7.0.0-cp37-abi3-win_amd64.whl (244 kB)
+2025-07-03 16:29:23.049 [info] Using cached pycparser-2.22-py3-none-any.whl (117 kB)
+2025-07-03 16:29:23.058 [info] Downloading qtconsole-5.6.1-py3-none-any.whl (125 kB)
+2025-07-03 16:29:23.076 [info] Downloading QtPy-2.4.3-py3-none-any.whl (95 kB)
+2025-07-03 16:29:23.096 [info] Downloading ratelim-0.1.6-py2.py3-none-any.whl (4.0 kB)
+2025-07-03 16:29:23.113 [info] Downloading retrying-1.4.0-py3-none-any.whl (11 kB)
+2025-07-03 16:29:23.129 [info] Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+2025-07-03 16:29:23.165 [info] Using cached stack_data-0.6.3-py3-none-any.whl (24 kB)
+2025-07-03 16:29:23.192 [info] Using cached asttokens-3.0.0-py3-none-any.whl (26 kB)
+2025-07-03 16:29:23.218 [info] Using cached executing-2.2.0-py2.py3-none-any.whl (26 kB)
+2025-07-03 16:29:23.247 [info] Using cached pure_eval-0.2.3-py3-none-any.whl (11 kB)
+2025-07-03 16:29:23.262 [info] Downloading uri_template-1.3.0-py3-none-any.whl (11 kB)
+2025-07-03 16:29:23.300 [info] Using cached wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+2025-07-03 16:29:28.133 [info] Building wheels for collected packages: pandas_ta
+2025-07-03 16:29:28.146 [info]   Building wheel for pandas_ta (pyproject.toml): started
+2025-07-03 16:29:31.843 [info]   Building wheel for pandas_ta (pyproject.toml): finished with status 'done'
+2025-07-03 16:29:31.887 [info]   Created wheel for pandas_ta: filename=pandas_ta-0.3.14b0-py3-none-any.whl size=219005 sha256=8a686c76480ce99abdc3f0ea6e7cbae8471bcf63e11092a625f3e80eac0a78ea
+2025-07-03 16:29:31.887 [info]   Stored in directory: c:\users\admin\appdata\local\pip\cache\wheels\7f\33\8b\50b245c5c65433cd8f5cb24ac15d97e5a3db2d41a8b6ae957d
+2025-07-03 16:29:31.893 [info] Successfully built pandas_ta
+2025-07-03 16:29:32.798 [info] Installing collected packages: webencodings, wcwidth, pywin32, pytz, pure-eval, multitasking, libclang, ipython-genutils, flatbuffers, fastjsonschema, dash-table, dash-html-components, dash-core-components, appdirs, zipp, wrapt, win32-setctime, widgetsnbextension, wheel, websocket-client, webcolors, urllib3, uri-template, tzdata, typing-extensions, types-python-dateutil, traitlets, tornado, tinycss2, threadpoolctl, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, tenacity, soupsieve, sniffio, six, Send2Trash, rpds-py, rfc3986-validator, retrying, pyzmq, pyyaml, pywinpty, python-json-logger, python-dotenv, pyparsing, pygments, pycparser, pyasn1, psutil, protobuf, prompt_toolkit, prometheus-client, platformdirs, pillow, parso, pandocfilters, packaging, overrides, opt-einsum, oauthlib, numpy, nest-asyncio, mistune, MarkupSafe, markdown, lxml, llvmlite, kiwisolver, keras, jupyterlab_widgets, jupyterlab-pygments, jsonpointer, joblib, itsdangerous, idna, grpcio, gast, future, frozendict, fqdn, fonttools, executing, defusedxml, decorator, debugpy, cycler, configparser, colorama, charset_normalizer, certifi, cachetools, blinker, bleach, attrs, asttokens, ansi2html, absl-py, Werkzeug, terminado, stack_data, scipy, rsa, rfc3339-validator, requests, referencing, ratelim, qtpy, python-dateutil, pyasn1-modules, plotly, patsy, numba, ml-dtypes, matplotlib-inline, loguru, jupyter-core, jinja2, jedi, ipython-pygments-lexers, importlib-metadata, html5lib, h5py, google-pasta, contourpy, comm, click, cffi, beautifulsoup4, astunparse, anyio, scikit-learn, requests-oauthlib, pandas, matplotlib, jupyter-server-terminals, jupyter-client, jsonschema-specifications, ipython, google-auth, geocoder, Flask, cryptography, arrow, argon2-cffi-bindings, yfinance, statsmodels, seaborn, projectpro, pandas_ta, pandas_datareader, jsonschema, isoduration, ipywidgets, ipykernel, google-auth-oauthlib, dash, argon2-cffi, tensorboard, qtconsole, nbformat, jupyter-console, tensorflow-intel, nbclient, jupyter-events, tensorflow, nbconvert, jupyter-server, notebook-shim, nbclassic, notebook, jupyter
+2025-07-03 16:36:03.552 [info] Discover tests for workspace name: Stock-Price-Prediction-YFinance-LSTM-RNN - uri: c:\Users\Admin\OneDrive\Desktop\Developer\Stock-Price-Prediction-YFinance-LSTM-RNN\.venv\Lib\site-packages\statsmodels\setup.cfg
+2025-07-03 16:36:55.713 [info] ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: 'c:\\Users\\Admin\\OneDrive\\Desktop\\Developer\\Stock-Price-Prediction-YFinance-LSTM-RNN\\.venv\\Lib\\site-packages\\tensorflow\\include\\tensorflow\\compiler\\xla\\mlir_hlo\\_virtual_includes\\gml_st_bufferizable_op_interface\\gml_st\\interfaces\\bufferizable_op_interface_impl.h'
+2025-07-03 16:36:55.718 [info] 
+2025-07-03 16:36:57.816 [info] Traceback (most recent call last):
+  File "c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\create_venv.py", line 96, in run_process
+2025-07-03 16:36:57.817 [info]     subprocess.run(args, cwd=os.getcwd(), check=True)  # noqa: PTH109
+2025-07-03 16:36:57.818 [info]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 569, in run
+2025-07-03 16:36:57.844 [info]     raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['c:\\Users\\Admin\\OneDrive\\Desktop\\Developer\\Stock-Price-Prediction-YFinance-LSTM-RNN\\.venv\\Scripts\\python.exe', '-m', 'pip', 'install', '-r', 'c:\\Users\\Admin\\OneDrive\\Desktop\\Developer\\Stock-Price-Prediction-YFinance-LSTM-RNN\\requirements.txt']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+2025-07-03 16:36:57.844 [info] Traceback (most recent call last):
+  File "c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\create_venv.py", line 271, in <module>
+    main(sys.argv[1:])
+  File "c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\create_venv.py", line 263, in main
+2025-07-03 16:36:57.844 [info]     install_requirements(venv_path, requirements)
+  File "c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\create_venv.py", line 125, in install_requirements
+2025-07-03 16:36:57.845 [info]     run_process(
+  File "c:\Users\Admin\.vscode\extensions\ms-python.python-2025.8.0-win32-x64\python_files\create_venv.py", line 98, in run_process
+2025-07-03 16:36:57.846 [info]     raise VenvError(error_message) from exc
+VenvError: CREATE_VENV.PIP_FAILED_INSTALL_REQUIREMENTS
+2025-07-03 16:36:57.871 [error] Error while running venv creation script:  CREATE_VENV.PIP_FAILED_INSTALL_REQUIREMENTS
+2025-07-03 16:36:57.872 [error] CREATE_VENV.PIP_FAILED_INSTALL_REQUIREMENTS
