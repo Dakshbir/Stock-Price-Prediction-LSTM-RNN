@@ -13,9 +13,8 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Model outputs (large files)
-output/models/*.h5
-output/figures/
-output/reports/
+output/
+*.h5
 
 # OS
 .DS_Store
