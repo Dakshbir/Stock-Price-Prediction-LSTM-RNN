@@ -509,7 +509,7 @@ with tab3:
             ss_res = np.sum((actuals - preds) ** 2)
             ss_tot = np.sum((actuals - np.mean(actuals)) ** 2)
             r2 = 1 - ss_res / ss_tot if ss_tot != 0 else 0
-            dir_acc = np.mean(np.diff(actuals) > 0 == np.diff(preds) > 0) * 100
+            dir_acc = np.mean((np.diff(actuals) > 0) == (np.diff(preds) > 0)) * 100
 
             st.session_state.model   = model
             st.session_state.sc      = sc
