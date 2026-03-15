@@ -1,237 +1,180 @@
-# Stock Price Forecasting with RNN & LSTM Models
+# Stock Price Forecasting with RNN & LSTM
 
-Accurately forecasting stock prices empowers investors, traders, and analysts to navigate market dynamics with confidence. In this project, we employ **Recurrent Neural Networks (RNNs)** and **Long Short-Term Memory (LSTM)** architectures to model and predict daily closing prices for Apple Inc. (AAPL) using historical market data and technical indicators.
+An end-to-end deep learning pipeline that forecasts stock prices for any ticker using Recurrent Neural Networks (RNN) and Long Short-Term Memory (LSTM) architectures, enriched with technical indicators. Includes an interactive Streamlit web app for live predictions.
+
+**Live Demo**: [Streamlit App](https://dakshbir-stock-price-prediction-lstm-rnn.streamlit.app)
 
 ---
 
 ## Table of Contents
 
-1. [Business Context](#business-context)
-2. [Key Benefits](#key-benefits)
-3. [Challenges & Limitations](#challenges--limitations)
-4. [Project Goals](#project-goals)
-5. [Data Acquisition & Features](#data-acquisition--features)
-6. [Technical Indicators](#technical-indicators)
-7. [Architecture & Code Structure](#architecture--code-structure)
-8. [Setup & Execution](#setup--execution)
-9. [Model Development](#model-development)
-10. [Evaluation Metrics](#evaluation-metrics)
-11. [Results & Analysis](#results--analysis)
-12. [Future Work](#future-work)
-13. [Contributing](#contributing)
-14. [Contact](#contact)
+1. [Overview](#overview)
+2. [Tech Stack](#tech-stack)
+3. [Project Structure](#project-structure)
+4. [Models](#models)
+5. [Technical Indicators](#technical-indicators)
+6. [Setup & Usage](#setup--usage)
+7. [Evaluation Metrics](#evaluation-metrics)
+8. [Results](#results)
+9. [Future Work](#future-work)
+10. [Contact](#contact)
 
 ---
 
-## Business Context
+## Overview
 
-Financial markets are highly dynamic. Reliable forecasts of stock prices help:
-
-* **Investors** choose optimal entry and exit points.
-* **Traders** implement algorithmic strategies that respond to predicted short-term movements.
-* **Risk Managers** quantify and mitigate potential losses.
-
-By leveraging deep learning models that capture temporal patterns, this project demonstrates how advanced sequence modeling can improve decision-making in finance.
+Financial time series are among the most challenging prediction targets due to noise, volatility, and non-stationarity. This project builds three sequential deep learning models — SimpleRNN, LSTM, and Multivariate LSTM — trained on historical OHLCV data augmented with technical indicators. The pipeline supports any stock ticker via Yahoo Finance and exposes predictions through both a CLI tool and an interactive web frontend.
 
 ---
 
-## Key Benefits
+## Tech Stack
 
-* **Data-Driven Decisions**: Replaces intuition-based trading with quantitative signals.
-* **Automation**: Streamlines forecasting pipelines for continuous monitoring.
-* **Scalability**: Modular architecture supports multiple tickers and feature sets.
-
----
-
-## Challenges & Limitations
-
-1. **Market Volatility**: Sudden events (earnings releases, geopolitical news) introduce noise.
-2. **Overfitting**: Models may memorize historical trends that don’t generalize to unseen data.
-3. **Feature Selection**: Irrelevant indicators can degrade performance.
-4. **Latency**: Real-time forecasting demands efficient inference.
-
-This project addresses these issues via cross-validation, regularization, and careful indicator engineering.
+| Layer | Tools |
+|---|---|
+| Data Acquisition | `yfinance`, Yahoo Finance v8 Chart API |
+| Data Processing | `pandas`, `numpy`, `scikit-learn` (MinMaxScaler) |
+| Deep Learning | `TensorFlow`, `Keras` (SimpleRNN, LSTM, Dense, Dropout) |
+| Visualization | `plotly`, `matplotlib`, `seaborn` |
+| Frontend | `Streamlit` |
+| Version Control | Git, GitHub |
 
 ---
 
-## Project Goals
+## Project Structure
 
-1. **Build** and **tune** RNN and LSTM models for sequence forecasting.
-2. **Compare** performance using error and directional accuracy metrics.
-3. **Enhance** predictions by incorporating technical indicators (moving averages, RSI, MACD).
-4. **Document** an extensible pipeline for future enhancements.
+```
+Stock-Price-Prediction-LSTM-main/
+├── app.py                    # Streamlit web frontend
+├── engine.py                 # CLI pipeline runner
+├── ml_pipeline/
+│   ├── __init__.py
+│   ├── train.py              # RNN, LSTM, Multivariate LSTM training & plotting
+│   └── utils.py              # Data splitting, sequence generation, metrics, indicators
+├── lib/
+│   ├── images/               # Architecture diagrams (RNN, LSTM, MLP)
+│   └── lstm_dakshbir.ipynb   # Research & experimentation notebook
+├── .streamlit/
+│   └── config.toml           # Dark theme configuration
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
 
 ---
 
-## Data Acquisition & Features
+## Models
 
-* **Source**: Retrieved daily OHLCV data for AAPL from Yahoo Finance (`yfinance` API).
-* **Time Period**: January 1, 2010 – June 30, 2025.
-* **Primary Features**:
+### 1. SimpleRNN
+Baseline recurrent model. Captures short-term temporal dependencies using vanilla recurrent units.
 
-  * **Open, High, Low, Close, Volume**
-  * **Adjusted Close** for corporate actions.
-* **Data Cleaning**:
+```python
+model = Sequential([
+    SimpleRNN(50, return_sequences=True, input_shape=(60, 1)),
+    Dropout(0.2),
+    SimpleRNN(30),
+    Dense(1)
+])
+```
 
-  * Forward-fill missing values.
-  * Remove outliers using interquartile range filtering.
+### 2. LSTM
+Addresses the vanishing gradient problem using forget, input, and output gates — better at capturing long-range patterns.
+
+```python
+model = Sequential([
+    LSTM(50, return_sequences=True, input_shape=(60, 1)),
+    Dropout(0.2),
+    LSTM(30),
+    Dense(1)
+])
+```
+
+### 3. Multivariate LSTM
+Extends the LSTM to accept multiple input features — Close price plus RSI, MACD, EMA, and Bollinger Bands — enabling the model to learn from market signals beyond raw price.
+
+**Training config (all models):**
+- Loss: Mean Squared Error
+- Optimizer: Adam (lr=0.001)
+- Lookback window: 60 days
+- EarlyStopping (patience=10) + ReduceLROnPlateau
+- Train/test split: year-based (most recent year held out for testing)
 
 ---
 
 ## Technical Indicators
 
-Calculated via `pandas-ta`, including:
+Computed from scratch using `pandas` and `numpy` in `ml_pipeline/utils.py`:
 
-| Indicator                                    | Description                    | Parameters                    |
-| -------------------------------------------- | ------------------------------ | ----------------------------- |
-| Simple Moving Avg                            | Trend smoothing                | Windows: 10, 20, 50           |
-| Exponential MA                               | Reacts faster to price changes | Spans: 12, 26                 |
-| Relative Strength                            | Momentum oscillator            | Period: 14                    |
-| Moving Average Convergence Divergence (MACD) | Trend-following momentum       | Fast: 12, Slow: 26, Signal: 9 |
-| Bollinger Bands                              | Volatility measure             | Window: 20, Multiplier: 2     |
-
-These indicators augment raw price inputs to help the network learn market signals.
+| Indicator | Description | Parameters |
+|---|---|---|
+| SMA | Simple Moving Average | Windows: 10, 20, 50 |
+| EMA | Exponential Moving Average | Spans: 12, 26 |
+| RSI | Relative Strength Index (momentum) | Period: 14 |
+| MACD | Moving Average Convergence Divergence | Fast: 12, Slow: 26, Signal: 9 |
+| Bollinger Bands | Volatility bands around SMA | Window: 20, Std: 2 |
 
 ---
 
-## Architecture & Code Structure
+## Setup & Usage
+
+### 1. Clone & install
 
 ```bash
-stock-forecasting/
-├── ml_pipeline/               # Core modules
-│   ├── data_preparation.py    # Data loader, cleaning, feature engineering
-│   ├── model_training.py      # Model definitions (RNN, LSTM), training loops
-│   ├── evaluation.py          # Metric calculations and visualizations
-│   └── engine.py              # Command-line interface to run stages
-├── output/
-│   ├── models/                # Serialized model weights (.h5)
-│   ├── figures/               # Loss and prediction plots
-│   └── reports/               # CSV of evaluation metrics
-├── requirements.txt           # Pin exact package versions
-├── .env.example               # Template for environment variables (e.g., API keys)
-└── README.md                  # Project documentation
+git clone https://github.com/Dakshbir/Stock-Price-Prediction-LSTM-RNN.git
+cd Stock-Price-Prediction-LSTM-RNN
+pip install -r requirements.txt
 ```
 
----
+### 2. Run the Streamlit app (recommended)
 
-## Setup & Execution
+```bash
+streamlit run app.py
+```
 
-1. **Clone the repository**:
+Open `http://localhost:8501` in your browser. Enter any ticker, select a date range, and click **Fetch Data** → **Train LSTM**.
 
-   ```bash
-   git clone <repository_url>
-   cd stock-forecasting
-   ```
+### 3. Run the CLI pipeline
 
-2. **Configure environment**:
+```bash
+python engine.py --ticker AAPL --start 2018-01-01 --end 2024-01-01
+```
 
-   ```bash
-   cp .env.example .env
-   # Set any required environment variables in .env
-   ```
-
-3. **Install dependencies**:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run the full pipeline**:
-
-   ```bash
-   python ml_pipeline/engine.py --start 2010-01-01 --end 2025-06-30 --ticker AAPL
-   ```
-
-5. **View results**:
-
-   * Trained model files in `output/models/`.
-   * Forecast vs. actual plots in `output/figures/`.
-   * Summary of metrics in `output/reports/evaluation.csv`.
-
----
-
-## Model Development
-
-1. **Data Preparation**:
-
-   * Normalize features with MinMaxScaler.
-   * Generate sliding windows (lookback: 60 days).
-
-2. **RNN Architecture**:
-
-   ```python
-   model = Sequential([
-       SimpleRNN(50, return_sequences=True, input_shape=(lookback, n_features)),
-       Dropout(0.2),
-       SimpleRNN(30),
-       Dense(1)
-   ])
-   ```
-
-3. **LSTM Architecture**:
-
-   ```python
-   model = Sequential([
-       LSTM(50, return_sequences=True, input_shape=(lookback, n_features)),
-       Dropout(0.2),
-       LSTM(30),
-       Dense(1)
-   ])
-   ```
-
-4. **Training**:
-
-   * Loss: Mean Squared Error
-   * Optimizer: Adam (learning rate=0.001)
-   * Batch size: 32
-   * Epochs: 100 with EarlyStopping (patience=10)
+This trains all three models sequentially and saves prediction plots to `output/figures/`.
 
 ---
 
 ## Evaluation Metrics
 
-* **Mean Absolute Error (MAE)**
-* **Root Mean Squared Error (RMSE)**
-* **Directional Accuracy**: percentage of days where predicted and actual price move in the same direction.
-
-Visual comparisons and metric tables are generated in the `evaluation` module.
+| Metric | Description |
+|---|---|
+| RMSE | Root Mean Squared Error — penalises large errors |
+| MAE | Mean Absolute Error — average prediction deviation |
+| MAPE | Mean Absolute Percentage Error — scale-independent |
+| R² | Coefficient of determination — variance explained |
+| Directional Accuracy | % of days where predicted and actual price move in the same direction |
 
 ---
 
-## Results & Analysis
+## Results
 
-* **RNN vs. LSTM**: LSTM outperformed RNN by \~5% lower RMSE on test data.
-* **Indicator Impact**: Including MACD and RSI reduced MAE by \~3% compared to raw prices only.
-* **Prediction Horizon**: 1-day ahead forecasts achieved \~60% directional accuracy.
+Tested on AAPL (2018–2024, ~1,500 trading days):
 
-Refer to `output/figures/` for loss curves and forecast plots.
+- **LSTM vs RNN**: LSTM achieved ~5% lower RMSE than the baseline SimpleRNN
+- **Multivariate LSTM**: Adding RSI, MACD, and Bollinger Bands as features improved directional accuracy
+- **Directional Accuracy**: ~60% on held-out test data
+- **Training**: EarlyStopping typically triggered between epochs 15–30, preventing overfitting
 
 ---
 
 ## Future Work
 
-* Experiment with **Bidirectional LSTMs** and **GRU** layers.
-* Incorporate **sentiment analysis** from financial news.
-* Deploy model as a real-time API using FastAPI or Flask.
-
----
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome. To get started:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/<feature-name>`.
-3. Commit changes: `git commit -m "Add <feature>"`.
-4. Push to your branch: `git push origin feature/<feature-name>`.
-5. Open a pull request.
+- Bidirectional LSTM and GRU variants
+- Attention mechanism over the 60-day window
+- Sentiment analysis from financial news as additional features
+- Multi-step ahead forecasting (5-day, 30-day horizons)
 
 ---
 
 ## Contact
 
 **Dakshbir Singh Kapoor**
-✉️ [dakshbirkapoor@gmail.com](mailto:dakshbirkapoor@gmail.com)
-GitHub: [Dakshbir](https://github.com/Dakshbir)
-
-*Powered by Python, TensorFlow, and the open-source community.*
+[dakshbirkapoor@gmail.com](mailto:dakshbirkapoor@gmail.com) · [GitHub](https://github.com/Dakshbir)
