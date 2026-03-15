@@ -1,6 +1,6 @@
 """
-Enhanced training module for Tesla stock price prediction using RNN and LSTM models.
-This module provides comprehensive training functions with improved architecture and evaluation.
+Enhanced training module for stock price prediction using RNN and LSTM models.
+This module provides comprehensive training functions with improved architecture and evaluation for any stock ticker.
 """
 
 # Import necessary libraries and modules
@@ -16,7 +16,6 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 from sklearn.preprocessing import MinMaxScaler
 from pandas_datareader.data import DataReader
 from pandas_datareader import data as pdr
-import pandas_ta as ta
 import os
 
 # Import Keras layers and models
@@ -82,11 +81,11 @@ def sequence_generation(dataset: pd.DataFrame, sc: MinMaxScaler, model: Sequenti
         print(f"Error in sequence generation: {str(e)}")
         return None
 
-def train_rnn_model(X_train, y_train, n_steps, features, sc, test_set, dataset, 
-                   epochs=50, batch_size=32, verbose=1, steps_in_future=30, 
-                   save_model_path=None, validation_split=0.2):
+def train_rnn_model(X_train, y_train, n_steps, features, sc, test_set, dataset,
+                   epochs=50, batch_size=32, verbose=1, steps_in_future=30,
+                   save_model_path=None, validation_split=0.2, ticker='STOCK'):
     """
-    Train an enhanced RNN model for Tesla stock price prediction.
+    Train an enhanced RNN model for stock price prediction.
     
     Args:
         X_train (np.array): Training input sequences
@@ -107,7 +106,7 @@ def train_rnn_model(X_train, y_train, n_steps, features, sc, test_set, dataset,
         Sequential: Trained RNN model
     """
     print("="*60)
-    print("TRAINING ENHANCED RNN MODEL FOR TESLA STOCK PREDICTION")
+    print("TRAINING ENHANCED RNN MODEL FOR STOCK PRICE PREDICTION")
     print("="*60)
     
     try:
@@ -184,7 +183,7 @@ def train_rnn_model(X_train, y_train, n_steps, features, sc, test_set, dataset,
                 plot_predictions(
                     y_test_actual[:steps_in_future], 
                     future_results, 
-                    "Tesla Stock Price - RNN Future Predictions",
+                    f"{ticker} Stock Price - RNN Future Predictions",
                     save_path="output/figures/rnn_future_predictions.png" if save_model_path else None
                 )
         
@@ -202,9 +201,9 @@ def train_rnn_model(X_train, y_train, n_steps, features, sc, test_set, dataset,
 
 def train_lstm_model(X_train, y_train, n_steps, features, sc, test_set, dataset,
                     epochs=50, batch_size=32, verbose=1, steps_in_future=30,
-                    save_model_path=None, validation_split=0.2):
+                    save_model_path=None, validation_split=0.2, ticker='STOCK'):
     """
-    Train an enhanced LSTM model for Tesla stock price prediction.
+    Train an enhanced LSTM model for stock price prediction.
     
     Args:
         X_train (np.array): Training input sequences
@@ -225,7 +224,7 @@ def train_lstm_model(X_train, y_train, n_steps, features, sc, test_set, dataset,
         Sequential: Trained LSTM model
     """
     print("="*60)
-    print("TRAINING ENHANCED LSTM MODEL FOR TESLA STOCK PREDICTION")
+    print("TRAINING ENHANCED LSTM MODEL FOR STOCK PRICE PREDICTION")
     print("="*60)
     
     try:
@@ -302,7 +301,7 @@ def train_lstm_model(X_train, y_train, n_steps, features, sc, test_set, dataset,
                 plot_predictions(
                     y_test_actual[:steps_in_future], 
                     future_results, 
-                    "Tesla Stock Price - LSTM Future Predictions",
+                    f"{ticker} Stock Price - LSTM Future Predictions",
                     save_path="output/figures/lstm_future_predictions.png" if save_model_path else None
                 )
         
@@ -338,9 +337,9 @@ def create_multivariate_sequences(X, y, n_steps):
 
 def train_multivariate_lstm(X_train, y_train, X_test, y_test, mv_features, mv_sc,
                            epochs=50, batch_size=32, verbose=1, save_model_path=None,
-                           validation_split=0.2):
+                           validation_split=0.2, ticker='STOCK'):
     """
-    Train an enhanced multivariate LSTM model for Tesla stock price prediction.
+    Train an enhanced multivariate LSTM model for stock price prediction.
     
     Args:
         X_train (np.array): Training input sequences
@@ -359,7 +358,7 @@ def train_multivariate_lstm(X_train, y_train, X_test, y_test, mv_features, mv_sc
         Sequential: Trained multivariate LSTM model
     """
     print("="*60)
-    print("TRAINING ENHANCED MULTIVARIATE LSTM MODEL FOR TESLA")
+    print("TRAINING ENHANCED MULTIVARIATE LSTM MODEL")
     print("="*60)
     
     try:
@@ -423,7 +422,7 @@ def train_multivariate_lstm(X_train, y_train, X_test, y_test, mv_features, mv_sc
         plot_predictions(
             y_test, 
             predictions.flatten(), 
-            "Tesla Stock Price - Multivariate LSTM",
+            f"{ticker} Stock Price - Multivariate LSTM",
             save_path="output/figures/mv_lstm_predictions.png" if save_model_path else None
         )
         
@@ -439,19 +438,20 @@ def train_multivariate_lstm(X_train, y_train, X_test, y_test, mv_features, mv_sc
         print(f"Error in Multivariate LSTM training: {str(e)}")
         return None
 
-def compare_models(models_dict, test_data_dict):
+def compare_models(models_dict, test_data_dict, ticker='STOCK'):
     """
     Compare performance of different models and generate comparison report.
     
     Args:
         models_dict (dict): Dictionary of trained models
         test_data_dict (dict): Dictionary of test data for each model
+        ticker (str): Stock ticker symbol for output filenames (default: 'STOCK')
     
     Returns:
         pd.DataFrame: Comparison results
     """
     print("="*60)
-    print("TESLA STOCK PREDICTION - MODEL COMPARISON")
+    print("STOCK PRICE PREDICTION - MODEL COMPARISON")
     print("="*60)
     
     comparison_results = []
@@ -476,8 +476,8 @@ def compare_models(models_dict, test_data_dict):
         
         # Save comparison results
         os.makedirs("output", exist_ok=True)
-        comparison_df.to_csv("output/tesla_model_comparison.csv", index=False)
-        print("Model comparison saved to output/tesla_model_comparison.csv")
+        comparison_df.to_csv(f"output/{ticker.lower()}_model_comparison.csv", index=False)
+        print(f"Model comparison saved to output/{ticker.lower()}_model_comparison.csv")
         
         return comparison_df
     else:

@@ -1,19 +1,54 @@
 """
-Enhanced utility functions for Tesla stock price prediction.
-This module provides comprehensive data processing, evaluation, and visualization utilities.
+Enhanced utility functions for stock price prediction.
+This module provides comprehensive data processing, evaluation, and visualization utilities for any stock ticker.
 """
 
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pandas_ta as ta
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 import os
 from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
+
+def _ema(series, span):
+    """Compute exponential moving average."""
+    return series.ewm(span=span, adjust=False).mean()
+
+def _rsi(series, period=14):
+    """Compute RSI using exponential moving averages of gains/losses."""
+    delta = series.diff()
+    gain = delta.clip(lower=0)
+    loss = -delta.clip(upper=0)
+    avg_gain = gain.ewm(alpha=1/period, min_periods=period, adjust=False).mean()
+    avg_loss = loss.ewm(alpha=1/period, min_periods=period, adjust=False).mean()
+    rs = avg_gain / avg_loss.replace(0, np.nan)
+    return 100 - (100 / (1 + rs))
+
+def _macd(series, fast=12, slow=26):
+    """Compute MACD as fast EMA minus slow EMA."""
+    return _ema(series, fast) - _ema(series, slow)
+
+def _bollinger_upper(series, window=20, num_std=2):
+    """Compute upper Bollinger Band."""
+    sma = series.rolling(window=window).mean()
+    std = series.rolling(window=window).std()
+    return sma + (std * num_std)
+
+def add_technical_indicators(dataset):
+    """Add technical indicators using pandas-only calculations."""
+    df = dataset.copy()
+    df['RSI'] = _rsi(df['Close'], period=14)
+    df['EMA_12'] = _ema(df['Close'], span=12)
+    df['EMA_26'] = _ema(df['Close'], span=26)
+    df['EMA_50'] = _ema(df['Close'], span=50)
+    df['MACD'] = _macd(df['Close'], fast=12, slow=26)
+    df['BB_Upper'] = _bollinger_upper(df['Close'], window=20, num_std=2)
+    df['Volume_SMA'] = df['Volume'].rolling(window=20).mean()
+    return df
 
 def train_test_split(dataset, tstart, tend, columns=['High']):
     """
@@ -191,57 +226,29 @@ def plot_predictions(test, predicted, title, save_path=None):
     except Exception as e:
         print(f"Error plotting predictions: {str(e)}")
 
-def process_and_split_multivariate_data(dataset, tstart, tend, mv_features):
+def process_and_split_multivariate_data(dataset, tstart, tend, mv_features, ticker='STOCK'):
     """
-    Process and split multivariate data with enhanced technical indicators for Tesla.
+    Process and split multivariate data with enhanced technical indicators.
     
     Args:
         dataset (pd.DataFrame): Original stock dataset
         tstart (int): Start year for training
         tend (int): End year for training
         mv_features (int): Number of multivariate features
+        ticker (str): Stock ticker symbol for logging (default: 'STOCK')
     
     Returns:
         tuple: (X_train, y_train, X_test, y_test, mv_sc) - Processed multivariate data and scaler
     """
     try:
-        print("Processing multivariate data for Tesla...")
+        print(f"Processing multivariate data for {ticker}...")
         
-        # Create a copy of the dataset
-        multi_variate_df = dataset.copy()
-        
-        # Calculate enhanced technical indicators
+        # Create a copy of the dataset and calculate technical indicators
         print("Calculating technical indicators...")
-        
-        # RSI with different periods
-        multi_variate_df['RSI'] = ta.rsi(multi_variate_df.Close, length=14)
-        
-        # Multiple EMAs for different time horizons
-        multi_variate_df['EMA_12'] = ta.ema(multi_variate_df.Close, length=12)
-        multi_variate_df['EMA_26'] = ta.ema(multi_variate_df.Close, length=26)
-        multi_variate_df['EMA_50'] = ta.ema(multi_variate_df.Close, length=50)
-        
-        # MACD indicator
-        macd_data = ta.macd(multi_variate_df.Close)
-        if 'MACD_12_26_9' in macd_data.columns:
-            multi_variate_df['MACD'] = macd_data['MACD_12_26_9']
-        else:
-            multi_variate_df['MACD'] = ta.sma(multi_variate_df.Close, length=12) - ta.sma(multi_variate_df.Close, length=26)
-        
-        # Bollinger Bands
-        bb_data = ta.bbands(multi_variate_df.Close, length=20)
-        if 'BBU_20_2.0' in bb_data.columns:
-            multi_variate_df['BB_Upper'] = bb_data['BBU_20_2.0']
-            multi_variate_df['BB_Lower'] = bb_data['BBL_20_2.0']
-        else:
-            # Fallback calculation
-            sma_20 = ta.sma(multi_variate_df.Close, length=20)
-            std_20 = multi_variate_df.Close.rolling(window=20).std()
-            multi_variate_df['BB_Upper'] = sma_20 + (std_20 * 2)
-            multi_variate_df['BB_Lower'] = sma_20 - (std_20 * 2)
-        
-        # Volume-based indicator
-        multi_variate_df['Volume_SMA'] = ta.sma(multi_variate_df.Volume, length=20)
+        multi_variate_df = add_technical_indicators(dataset)
+        sma_20 = multi_variate_df['Close'].rolling(window=20).mean()
+        std_20 = multi_variate_df['Close'].rolling(window=20).std()
+        multi_variate_df['BB_Lower'] = sma_20 - (std_20 * 2)
         
         # Create target variable
         multi_variate_df['Target'] = multi_variate_df['Adj Close'] - multi_variate_df['Open']
@@ -316,28 +323,29 @@ def create_sequences_multivariate(X, y, n_steps):
     
     return np.array(X_seq), np.array(y_seq)
 
-def plot_technical_indicators(dataset, tstart, tend, save_path=None):
+def plot_technical_indicators(dataset, tstart, tend, save_path=None, ticker='STOCK'):
     """
-    Plot technical indicators for Tesla stock analysis.
+    Plot technical indicators for stock analysis.
     
     Args:
         dataset (pd.DataFrame): Stock dataset with technical indicators
         tstart (int): Start year for plotting
         tend (int): End year for plotting
         save_path (str): Path to save the plot
+        ticker (str): Stock ticker symbol for chart titles (default: 'STOCK')
     """
     try:
         fig, axes = plt.subplots(3, 1, figsize=(16, 12))
         
         # Plot 1: Stock Price with EMAs
         dataset.loc[f"{tstart}":f"{tend}", ['High', 'EMA_12', 'EMA_26', 'EMA_50']].plot(
-            ax=axes[0], title="Tesla Stock Price with Moving Averages")
+            ax=axes[0], title=f"{ticker} Stock Price with Moving Averages")
         axes[0].set_ylabel("Price ($)")
         axes[0].grid(True, alpha=0.3)
         
         # Plot 2: RSI
         dataset.loc[f"{tstart}":f"{tend}", 'RSI'].plot(
-            ax=axes[1], title="Tesla RSI", color='orange')
+            ax=axes[1], title=f"{ticker} RSI", color='orange')
         axes[1].axhline(y=70, color='r', linestyle='--', alpha=0.7, label='Overbought')
         axes[1].axhline(y=30, color='g', linestyle='--', alpha=0.7, label='Oversold')
         axes[1].set_ylabel("RSI")
@@ -347,7 +355,7 @@ def plot_technical_indicators(dataset, tstart, tend, save_path=None):
         # Plot 3: MACD
         if 'MACD' in dataset.columns:
             dataset.loc[f"{tstart}":f"{tend}", 'MACD'].plot(
-                ax=axes[2], title="Tesla MACD", color='purple')
+                ax=axes[2], title=f"{ticker} MACD", color='purple')
             axes[2].axhline(y=0, color='black', linestyle='-', alpha=0.5)
             axes[2].set_ylabel("MACD")
             axes[2].grid(True, alpha=0.3)
@@ -401,53 +409,6 @@ def save_predictions_to_csv(actual, predicted, dates=None, save_path="output/pre
         
     except Exception as e:
         print(f"Error saving predictions: {str(e)}")
-
-def load_tesla_data(start_date='2012-01-01', end_date=None):
-    """
-    Load Tesla stock data with error handling and data quality checks.
-    
-    Args:
-        start_date (str): Start date for data loading
-        end_date (str): End date for data loading (default: current date)
-    
-    Returns:
-        pd.DataFrame: Tesla stock data
-    """
-    try:
-        from pandas_datareader import data as pdr
-        import yfinance as yf
-        
-        # Override Yahoo Finance downloader
-        yf.pdr_override()
-        
-        if end_date is None:
-            end_date = datetime.now()
-        
-        print(f"Loading Tesla (TSLA) stock data from {start_date} to {end_date}...")
-        
-        # Load data
-        dataset = pdr.get_data_yahoo('TSLA', start=start_date, end=end_date)
-        
-        print(f"Tesla stock data loaded successfully!")
-        print(f"Data shape: {dataset.shape}")
-        print(f"Date range: {dataset.index[0]} to {dataset.index[-1]}")
-        
-        # Check for missing values
-        missing_values = dataset.isnull().sum()
-        if missing_values.sum() > 0:
-            print("Missing values found:")
-            print(missing_values[missing_values > 0])
-            
-            # Fill missing values
-            dataset.fillna(method='ffill', inplace=True)
-            dataset.fillna(method='bfill', inplace=True)
-            print("Missing values filled using forward and backward fill.")
-        
-        return dataset
-        
-    except Exception as e:
-        print(f"Error loading Tesla data: {str(e)}")
-        return None
 
 def generate_model_report(model, model_name, metrics, save_path=None):
     """
